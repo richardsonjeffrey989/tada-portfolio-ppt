@@ -552,5 +552,4 @@ function startCoverVideo() {
 window.addEventListener("resize", () => { fitAll(); fitTadaEmbeds(stage); });
 requestAnimationFrame(() => { fitAll(); showSlide(0); });
 setTimeout(fitAll, 500);
-if (document.readyState === "complete") setTimeout(startCoverVideo, 100);
-else window.addEventListener("load", () => setTimeout(startCoverVideo, 100), { once:true });
+setTimeout(startCoverVideo, 200);
