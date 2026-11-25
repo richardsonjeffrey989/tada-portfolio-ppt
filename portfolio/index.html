@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="湖北美术学院联合设计训练营 TADA! 图然想起项目作品集。">
+  <title>TADA! 图然想起 · 项目作品集</title>
+  <link rel="icon" href="assets/design/brand-symbol.webp" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="TADA! 图然想起 首页">TADA<span>!</span></a>
+      <button class="menu-button enhanced" aria-expanded="false" aria-controls="site-nav" type="button">目录 <span aria-hidden="true">☰</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="章节导航">
+        <a href="#problem">发现问题</a><a href="#research">用户调研</a><a href="#definition">问题定义</a><a href="#solution">方案探索</a><a href="#brand">产品设计</a><a href="#testing">测试迭代</a><a href="#demo">最终成果</a>
+      </nav>
+      <a class="header-out" href="https://shoucang.165-22-254-236.sslip.io/intro" target="_blank" rel="noopener">产品引导</a>
+    </div>
+    <div class="read-progress" aria-hidden="true"></div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> PROJECT CASE STUDY · 湖北美术学院 · 联合设计训练营</p>
+        <h1 id="hero-title"><span lang="en">TADA<i>!</i></span><span class="hero-zh">图然想起</span></h1>
+        <p class="hero-line">让收藏过的灵感，不再难以找回。</p>
+        <p class="hero-desc">给设计师的 AI 视觉素材收藏与检索工具。从一次找不到收藏的经历，走到可以体验的课程原型。</p>
+        <div class="actions"><a class="button primary" href="#problem">阅读项目案例</a><a class="button outline" href="#implementation">查看产品流程</a><a class="button outline" href="#outcome">体验产品</a><a class="button outline" href="presentation.html">PPT 汇报版</a></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-top"><span>PROJECT ARCHIVE</span><span>2026.11</span></div>
+        <div class="art-grid" aria-hidden="true"></div>
+        <div class="print print-back" aria-hidden="true"></div>
+        <div class="print print-front">
+          <img src="assets/design/brand-symbol.webp" alt="TADA 应用标志中的文件夹与叠放风景照片" width="525" height="520" fetchpriority="high">
+          <div class="print-caption"><span>视觉素材收藏与找回</span><span lang="en">TADA!</span></div>
+        </div>
+        <div class="art-bottom"><span lang="en">SAVE / FIND / USE</span></div>
+      </div>
+    </section>
+    <div class="project-strip wrap" aria-label="项目概览">
+      <div><span>项目类型</span><b>产品设计 · 研究与开发</b></div>
+      <div><span>开题题目</span><b>《我明明收藏过》</b></div>
+      <div><span>项目产出</span><b>多端网页 · 品牌 · <span class="keep-together">可运行原型</span></b></div>
+    </div>
+    <nav class="process-map wrap" aria-label="设计过程线索">
+      <span>项目主线</span>
+      <a href="#problem">01 发现问题</a><a href="#research">02 用户调研</a><a href="#definition">03 问题定义</a><a href="#solution">04 方案探索</a><a href="#brand">05 产品设计</a><a href="#testing">06 测试迭代</a><a href="#demo">07 最终成果</a>
+    </nav>
+
+    <nav class="design-subnav" id="design-subnav" aria-label="产品设计内部流程">
+      <span class="design-subnav-title">05 设计流程</span>
+      <a href="#brand" data-design-step="brand"><b>01</b> 名称与视觉</a><span class="design-arrow" aria-hidden="true">→</span>
+      <a href="#sketches" data-design-step="sketches"><b>02</b> 手绘构思</a><span class="design-arrow" aria-hidden="true">→</span>
+      <a href="#features" data-design-step="features" class="is-key"><b>03</b> 核心功能</a><span class="design-arrow" aria-hidden="true">→</span>
+      <a href="#implementation" data-design-step="implementation" class="is-key"><b>04</b> 手机端设计</a>
+    </nav>
+
+    <section class="case-section wrap" id="problem">
+      <header class="section-lead"><div class="chapter"><span>01</span> DISCOVER · 发现问题</div><h2>我明明收藏过</h2></header>
+
+      <div class="problem-block">
+        <div class="problem-block-head"><span>01</span><div><h3>从生活中发现问题</h3><p>两位组员先各写各的：13 条 + 12 条，共 25 个真实生活 Bug。</p></div></div>
+        <div class="bug-note-groups">
+          <div class="bug-note-column">
+            <h4>陈宇彤 · 13 条</h4>
+            <ol>
+              <li><b>01</b><span>投屏小字看不清</span></li>
+              <li class="is-marked"><b>02</b><span>找素材风格比例总对不上</span></li>
+              <li><b>03</b><span>Figma 批量改总漏几个</span></li>
+              <li><b>04</b><span>文件在另一台电脑上</span></li>
+              <li><b>05</b><span>几个软件来回导，糊了</span></li>
+              <li><b>06</b><span>屏幕和打印颜色不一样</span></li>
+              <li class="is-marked"><b>07</b><span>设计文件版本太多</span></li>
+              <li><b>08</b><span>C 盘满了不敢删</span></li>
+              <li><b>09</b><span>半夜用电脑吵室友</span></li>
+              <li><b>10</b><span>重要通知被淹没</span></li>
+              <li><b>11</b><span>洗澡总带毛巾</span></li>
+              <li><b>12</b><span>公厕手机没地方放</span></li>
+              <li><b>13</b><span>充电头把插孔挡了</span></li>
+            </ol>
+          </div>
+          <div class="bug-note-column">
+            <h4>潘奕好 · 12 条</h4>
+            <ol>
+              <li><b>14</b><span>水杯漏了泡坏充电器</span></li>
+              <li><b>15</b><span>类纸膜老掉、笔尖磨</span></li>
+              <li><b>16</b><span>想不起前几天干了啥</span></li>
+              <li><b>17</b><span>十几块十几块地乱买</span></li>
+              <li><b>18</b><span>数据线缠成一团</span></li>
+              <li><b>19</b><span>睡前刷手机停不下来</span></li>
+              <li><b>20</b><span>画着画着就驼背了</span></li>
+              <li><b>21</b><span>忘了家里已经有了</span></li>
+              <li><b>22</b><span>侧躺戴耳机压耳朵</span></li>
+              <li class="is-marked"><b>23</b><span>收集的参考图找不到</span></li>
+              <li><b>24</b><span>拍的 PPT 照片乱成一团</span></li>
+              <li><b>25</b><span>起夜开灯太刺眼</span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="funnel-flow" role="img" aria-label="从25个生活问题，筛到3个候选问题，再聚焦1个选题">
+          <div class="funnel-step"><b>25</b><span>个生活问题</span><small>全部写下来</small></div>
+          <span class="funnel-arrow" aria-hidden="true">→</span>
+          <div class="funnel-step"><b>3</b><span>个候选问题</span><small>找素材风格比例总对不上 / 设计文件版本太多 / 收集的参考图找不到</small></div>
+          <span class="funnel-arrow" aria-hidden="true">→</span>
+          <div class="funnel-step is-final"><b>1</b><span>个选题</span><small>各个平台收藏的东西，找不回来</small></div>
+        </div>
+        <div class="source-conflict"><b>筛选口径</b><p>3 个候选问题来自 PPT 中标黄的 3 条记录：找素材风格比例总对不上 / 设计文件版本太多 / 收集的参考图找不到。最终聚焦其中的收藏找回问题。</p></div>
+      </div>
+
+      <div class="problem-block">
+        <div class="problem-block-head"><span>02</span><div><h3>真实的收藏困境</h3><p class="block-subtitle">这种晚上，我们都经历过。</p></div></div>
+        <div class="app-shots">
+          <figure><img src="assets/problem/xiaohongshu-1.jpg" decoding="async" alt="小红书收藏页面，参考和点赞混在一起"><figcaption><b>小红书</b><span>参考和随手点的赞混在一起。</span></figcaption></figure>
+          <figure><img src="assets/problem/xiaohongshu-2.jpg" decoding="async" alt="小红书收藏页面继续往下找"><figcaption><b>小红书</b><span>往下划……还是没有。</span></figcaption></figure>
+          <figure><img src="assets/problem/zcool.jpg" decoding="async" alt="站酷收藏夹里大量作品集"><figcaption><b>站酷</b><span>收藏夹里一堆作品集。</span></figcaption></figure>
+          <figure><img src="assets/problem/bilibili.jpg" decoding="async" alt="B站收藏内容已失效"><figcaption><b>B站</b><span>找到了，但已失效。</span></figcaption></figure>
+        </div>
+        <p class="give-up-line">算了，重新搜吧。</p>
+      </div>
+
+      <div class="problem-block">
+        <div class="problem-block-head"><span>03</span><div><h3>收藏容易，找回却很难</h3><p>把初步发现的痛点压缩成四个关键词。</p></div></div>
+        <div class="pain-keywords"><span>收藏分散</span><span>记忆模糊</span><span>内容失效</span><span>重复搜索</span></div>
+        <p class="problem-transition">这只是我们自己的困扰，还是更多创作者共同面对的问题？</p>
+      </div>
+    </section>
+    <section class="band" id="research">
+      <div class="case-section wrap research-chapter">
+        <header class="section-lead"><div class="chapter"><span>02</span> RESEARCH · 用户调研</div><h2>问题真的存在吗？</h2></header>
+
+        <div class="research-block">
+          <div class="research-block-head"><span>01</span><div><h3>我们问了谁？怎么做的？</h3><p>先交代调研对象和方式，再看我们从中发现了什么。</p></div></div>
+          <div class="research-method">
+            <figure class="research-poster"><a class="zoom" href="assets/research/survey-recruitment-poster.jpg" data-gallery="research-method"><img src="assets/research/survey-recruitment-poster.jpg" decoding="async" alt="企鹅问卷招募海报 · 设计参考素材收藏与查找习惯调查"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>企鹅问卷招募海报 · 真实调研过程素材</figcaption></figure>
+            <div class="research-metrics">
+              <div><b>61</b><span>份问卷提交</span></div>
+              <div><b>60</b><span>名有视觉创作经历</span></div>
+              <div><b>52</b><span>名核心分析样本</span></div>
+              <div><b>7</b><span>份线上补充访谈</span></div>
+            </div>
+          </div>
+          <p class="method-note"><b>调研方式</b>：线上问卷 + 线上补充访谈。问卷通过朋友圈、QQ 动态、群聊和小红书传播；另设 6 个深入调研名额，用于继续追问收藏、找回与整理习惯。</p>
+          <div class="process-shots grid three">
+            <figure class="evidence plate"><a class="zoom" href="assets/research/survey-spread.jpg" data-gallery="research-process"><img src="assets/research/survey-spread.jpg" decoding="async" alt="问卷传播 · 社交平台转发截图"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>问卷传播 · 朋友圈、QQ 动态、群聊与小红书</figcaption></figure>
+            <figure class="evidence plate"><a class="zoom" href="assets/research/survey-edit.jpg" data-gallery="research-process"><img src="assets/research/survey-edit.jpg" decoding="async" alt="问卷编辑 · 问卷设计页面"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>问卷编辑 · 围绕收藏习惯与找回困难设计问题</figcaption></figure>
+            <figure class="evidence plate"><a class="zoom" href="assets/research/online-recruitment.jpg" data-gallery="research-process"><img src="assets/research/online-recruitment.jpg" decoding="async" alt="线上招募 · 访谈邀请对话"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>线上招募 · 对愿意继续交流的受访者补充访谈</figcaption></figure>
+          </div>
+        </div>
+
+        <div class="research-block">
+          <div class="research-block-head"><span>02</span><div><h3>三个关键发现</h3><p>同一组调研中，收藏、找回与再次使用三件事同时出现。</p></div></div>
+          <div class="tabs enhanced finding-tabs" data-tabs="finding" aria-label="三个关键发现">
+            <button type="button" data-tab="finding1" aria-selected="true">发现一｜收藏分散</button>
+            <button type="button" data-tab="finding2">发现二｜找回困难</button>
+            <button type="button" data-tab="finding3">发现三｜再次使用</button>
+          </div>
+          <div data-panels="finding" class="finding-panels">
+            <section class="chart finding-panel" data-panel="finding1">
+              <div class="finding-layout">
+                <div class="finding-copy">
+                  <h4>大家把参考存得很分散</h4>
+                  <p class="finding-stat"><b>39 / 52</b><span>使用两种及以上保存方式</span></p>
+                  <p class="source">保存方式 · 多选题 · n = 52</p>
+                  <div class="quote-line"><p>“特别喜欢的会保存图片放在相册的文件夹里”</p><span>访谈原话 · 节选</span></div>
+                  <div class="habit-list"><b>一位同学的实际收藏方式</b><span>小红书：重要教程发小号，普通内容直接收藏</span><span>B站：自己建立收藏夹</span><span>抖音：使用平台自动分类</span></div>
+                </div>
+                <div class="chart-card"><h5>收藏方式分布</h5><ul class="bars"><li><span>收藏在原平台</span><span class="bar" aria-hidden="true"><i style="--n:82.6923076923077%"></i></span><b>43<small> 人</small></b></li><li><span>保存到设备</span><span class="bar" aria-hidden="true"><i style="--n:71.15384615384616%"></i></span><b>37<small> 人</small></b></li><li><span>复制链接或发给自己</span><span class="bar" aria-hidden="true"><i style="--n:51.92307692307693%"></i></span><b>27<small> 人</small></b></li><li><span>使用专门收藏软件</span><span class="bar" aria-hidden="true"><i style="--n:13.461538461538462%"></i></span><b>7<small> 人</small></b></li></ul><p class="source">7 人数据来自现有问卷整理补充；发现一 PPT 展示前三项。</p></div>
+              </div>
+              <figure class="evidence finding-habit"><a class="zoom" href="assets/research/finding1-habits.jpg" data-gallery="finding"><img src="assets/research/finding1-habits.jpg" decoding="async" alt="真实用户在不同平台中的收藏习惯截图"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>真实证据 · 不同平台中的收藏习惯</figcaption></figure>
+            </section>
+            <section class="chart finding-panel" data-panel="finding2">
+              <div class="finding-layout">
+                <div class="finding-copy">
+                  <h4>“明明收藏过”，找起来还是麻烦</h4>
+                  <p class="finding-stat"><b>46</b><span>人作答找回困难题 · 多选</span></p>
+                  <p class="source">不是“有没有收藏”，而是收藏之后能不能找回来。</p>
+                  <div class="quote-line"><p>“记忆里有这张参考，但没通过右上角文字搜索搜到，因为只有文件名信息”</p><span>访谈原话 · 节选</span></div>
+                </div>
+                <div class="chart-card"><h5>重新查找时遇到的问题</h5><ul class="bars"><li><span>收藏太多，不好翻</span><span class="bar" aria-hidden="true"><i style="--n:65.21739130434783%"></i></span><b>30<small> 人</small></b></li><li><span>想不起关键词</span><span class="bar" aria-hidden="true"><i style="--n:52.17391304347826%"></i></span><b>24<small> 人</small></b></li><li><span>只记得图片大概样子</span><span class="bar" aria-hidden="true"><i style="--n:47.82608695652174%"></i></span><b>22<small> 人</small></b></li><li><span>忘记存在哪里</span><span class="bar" aria-hidden="true"><i style="--n:43.47826086956522%"></i></span><b>20<small> 人</small></b></li><li><span>原内容或链接失效</span><span class="bar" aria-hidden="true"><i style="--n:23.91304347826087%"></i></span><b>11<small> 人</small></b></li></ul><p class="source">前四项来自发现二 PPT；链接失效 11 人来自现有问卷整理补充。</p></div>
+              </div>
+            </section>
+            <section class="chart finding-panel" data-panel="finding3">
+              <div class="finding-layout">
+                <div class="finding-copy">
+                  <h4>大家其实还会再次使用以前收藏的东西</h4>
+                  <p class="finding-stat"><b>49 / 52</b><span>表示经常或偶尔会再次使用</span></p>
+                  <p class="source">复用频率 · 单选题 · n = 52</p>
+                  <div class="quote-line"><p>“前两三天找参考花太多时间了”</p><span>访谈原话 · 节选</span></div>
+                  <div class="quote-line"><p>“希望保存的时候本地可以弹小窗选相册分类”</p><span>访谈原话 · 节选</span></div>
+                </div>
+                <div class="chart-card"><div class="finding-donut-row"><div class="donut" style="--pct:94.2%" role="img" aria-label="49/52 会再次使用"><span>49/52</span><small>会再次使用</small></div><ul class="mini-stats"><li><b>10</b><span>经常使用</span></li><li><b>39</b><span>偶尔使用</span></li><li><b>3</b><span>基本不再使用</span></li></ul></div><h5>期待的收藏体验改进</h5><ul class="bars"><li><span>自动整理和分类</span><span class="bar" aria-hidden="true"><i style="--n:71.15384615384616%"></i></span><b>37<small> 人</small></b></li><li><span>通过图片或描述找回</span><span class="bar" aria-hidden="true"><i style="--n:63.46153846153846%"></i></span><b>33<small> 人</small></b></li><li><span>更方便地保存不同平台内容</span><span class="bar" aria-hidden="true"><i style="--n:46.15384615384615%"></i></span><b>24<small> 人</small></b></li><li><span>创作时更方便查看和使用</span><span class="bar" aria-hidden="true"><i style="--n:44.230769230769226%"></i></span><b>23<small> 人</small></b></li></ul><p class="source">改进期待 · 多选题 · n = 52。此处只呈现用户期待，不直接等同已确定功能。</p></div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="research-block">
+          <div class="research-block-head"><span>03</span><div><h3>假设验证</h3><p>把开题时的三个判断，放回问卷与访谈中核对。</p></div></div>
+          <div class="hypothesis-grid">
+            <article><span>假设一</span><h4>收藏方式分散</h4><p class="status is-supported">得到支持</p><p>39 / 52 使用两种及以上保存方式。</p></article>
+            <article><span>假设二</span><h4>收藏内容难以找回</h4><p class="status is-supported">得到支持</p><p>30 人觉得收藏太多，24 人想不起关键词，22 人只记得画面。</p></article>
+            <article><span>假设三</span><h4>收藏后基本不再使用</h4><p class="status is-refuted">被推翻</p><p>49 / 52 表示经常或偶尔会再次使用。</p></article>
+          </div>
+          <p class="source">来源 · 开题判断 PPT；完整表述与证据以原始 PPT 为准。</p>
+        </div>
+
+        <div class="research-summary">
+          <p class="eyebrow">CHAPTER SUMMARY · 章节总结</p>
+          <h3>这并不是我们独有的困扰。</h3>
+          <p>许多受访创作者都面临素材收藏分散、找回困难的问题，而他们仍然有再次使用素材的需求。</p>
+          <strong>那么，造成这些困难的原因是什么？</strong>
+        </div>
+      </div>
+    </section>
+    <section class="case-section wrap" id="definition">
+      <header class="section-lead"><div class="chapter"><span>03</span> DEFINE · 问题定义</div><h2>我们究竟要解决什么？</h2><p>团队将访谈整理成 7 组同理心卡片，并用 35 条便签归纳出五个议题，覆盖灵感获取、保存方式、分类习惯、找回困难与素材使用。</p></header>
+      <div class="grid three priority">
+        <div><span>P1</span><h3>找回与搜索</h3><p>文件名或文字标签无法覆盖用户记得的视觉特征。</p></div>
+        <div><span>P2</span><h3>分类与整理</h3><p>跨平台保存让同一项目的素材散落各处，回看要反复切换。</p></div>
+        <div><span>P3</span><h3>适配与版权</h3><p>找到参考以后，还需判断使用场景与来源。</p></div>
+      </div>
+      <div class="affinity-explorer">
+        <div class="affinity-heading">
+          <div><p class="eyebrow">AFFINITY MAP · 访谈证据</p><h3>点选主题，查看行为收获</h3><p>五个主题均来自现有亲和图；左侧是五类研究图快捷方式，右侧说明这张图让我们看到了什么。</p></div>
+          <figure class="affinity-thumb"><a class="zoom" href="assets/research/affinity-map.webp" data-gallery="affinity-overview"><img src="assets/research/affinity-map.webp" decoding="async" alt="亲和图总图缩略 · 五组主题与优先级"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>亲和图总图 · 点击放大</figcaption></figure>
+        </div>
+        <div class="tabs enhanced" data-tabs="affinity" aria-label="亲和图主题"><button type="button" data-tab="source">参考获取</button><button type="button" data-tab="save">保存方式</button><button type="button" data-tab="organize">分类习惯</button><button type="button" data-tab="find">找回困难</button><button type="button" data-tab="use">素材使用 · 版权</button></div>
+        <div class="affinity-workspace">
+          <div class="affinity-shortcuts" aria-label="五类研究图快捷方式">
+            <button type="button" data-affinity-shortcut="source" class="is-active" style="--pos:0% 50%"><img src="assets/research/affinity-themes.webp" alt=""><span>参考获取</span></button>
+            <button type="button" data-affinity-shortcut="save" style="--pos:25% 50%"><img src="assets/research/affinity-themes.webp" alt=""><span>保存方式</span></button>
+            <button type="button" data-affinity-shortcut="organize" style="--pos:50% 50%"><img src="assets/research/affinity-themes.webp" alt=""><span>分类习惯</span></button>
+            <button type="button" data-affinity-shortcut="find" style="--pos:75% 50%"><img src="assets/research/affinity-themes.webp" alt=""><span>找回困难</span></button>
+            <button type="button" data-affinity-shortcut="use" style="--pos:100% 50%"><img src="assets/research/affinity-themes.webp" alt=""><span>素材使用 · 版权</span></button>
+          </div>
+          <div data-panels="affinity">
+            <section class="affinity-panel" data-panel="source"><div class="affinity-text"><blockquote class="affinity-quote"><p>"灵感主要来自平台浏览和主动搜索，用户会根据创作需求不断寻找、补充和筛选参考。"</p><footer>亲和图便签摘录 · 共同模式</footer></blockquote><p class="affinity-read">行为说明：用户不是先想好分类，而是在浏览与搜索中不断发现参考。</p><p class="affinity-judgment">研究收获：产品要先接住“看到就想存”的动作，再解决存完以后的问题。</p></div></section>
+            <section class="affinity-panel" data-panel="save"><div class="affinity-text"><blockquote class="affinity-quote"><p>"现在这样就挺好，直接在相册里面找。"</p><footer>代表性访谈原话 · 匿名摘录</footer></blockquote><p class="affinity-read">行为说明：相册和文件夹仍是多数用户熟悉的保存位置。</p><p class="affinity-judgment">研究收获：导入要顺着现有习惯，而不是要求用户先重建一套分类。</p></div></section>
+            <section class="affinity-panel" data-panel="organize"><div class="affinity-text"><blockquote class="affinity-quote"><p>"希望保存的时候本地可以弹小窗选相册分类"</p><footer>代表性访谈原话 · 匿名摘录</footer></blockquote><p class="affinity-read">行为说明：用户会整理，但希望在保存当下用很轻的动作完成。</p><p class="affinity-judgment">研究收获：分类适合放进保存流程，项目页再保留自动与手动两类。</p></div></section>
+            <section class="affinity-panel" data-panel="find"><div class="affinity-text"><blockquote class="affinity-quote"><p>"记忆里有这张参考但没通过右上角文字搜索搜到，因为只有文件名信息"</p><footer>代表性访谈原话 · 匿名摘录</footer></blockquote><p class="affinity-read">行为说明：找回时依靠的不是文件名，而是画面、颜色和场景。</p><p class="affinity-judgment">研究收获：把按画面或颜色描述找回放到产品主路径。</p></div></section>
+            <section class="affinity-panel" data-panel="use"><div class="affinity-text"><blockquote class="affinity-quote"><p>"没有，因为风格差异太大。"</p><footer>代表性访谈原话 · 匿名摘录</footer></blockquote><p class="affinity-read">行为说明：找得到之后，用户还要判断能否用于当前创作与来源是否合适。</p><p class="affinity-judgment">研究收获：素材详情保留场景、风格与来源判断，项目与画板承接后续使用。</p></div></section>
+          </div>
+        </div>
+      </div>
+      <div class="decision-card">
+        <h3>关键判断 · 从现象到设计问题</h3>
+        <div class="decision-grid">
+          <div><span>当时判断</span><b>问题只是收藏分散</b><p>早期把整理与跨平台保存视作主要矛盾。</p></div>
+          <div><span>对应证据</span><b>P1 是找回与搜索</b><p>35 条便签归入五个议题；访谈原话指向文件名搜索无法覆盖视觉记忆。</p></div>
+          <div><span>团队决定</span><b>改问"只记得画面怎么办"</b><p>把优先级从"存得下"移到"找得到"。</p></div>
+          <div><span>产品体现</span><b>用找回串联整理与使用</b><p>手绘稿与后续方案都围绕同一条收、找、用工作流。</p></div>
+        </div>
+      </div>
+      <details class="expand">
+        <summary>查看亲和图总图、原始分析图与同理心地图</summary>
+        <div class="grid two">
+          <figure class="evidence plate"><a class="zoom" href="assets/research/affinity-map.webp" data-gallery="definition"><img src="assets/research/affinity-map.webp" decoding="async" alt="亲和图 · 五组议题与优先级"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>亲和图 · 五组议题与优先级</figcaption></figure>
+          <figure class="evidence plate"><a class="zoom" href="assets/research/affinity-evidence.webp" data-gallery="definition"><img src="assets/research/affinity-evidence.webp" decoding="async" alt="亲和图局部 · 原始访谈便签"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>亲和图局部 · 原始访谈便签</figcaption></figure>
+          <figure class="evidence plate"><a class="zoom" href="assets/research/affinity-themes.webp" data-gallery="definition"><img src="assets/research/affinity-themes.webp" decoding="async" alt="亲和图局部 · 归纳主题与优先级"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>亲和图局部 · 归纳主题与优先级</figcaption></figure>
+          <figure class="evidence plate"><a class="zoom" href="assets/research/journey-map.webp" data-gallery="definition"><img src="assets/research/journey-map.webp" decoding="async" alt="原档用户旅程 · 招新海报的典型场景"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>原档用户旅程 · 招新海报的典型场景</figcaption></figure>
+          <figure class="evidence plate"><a class="zoom" href="assets/research/persona.webp" data-gallery="definition"><img src="assets/research/persona.webp" decoding="async" alt="原档综合画像 · 小林"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>原档综合画像 · 小林</figcaption></figure>
+          <figure class="evidence plate"><a class="zoom" href="assets/research/question-evolution.webp" data-gallery="definition"><img src="assets/research/question-evolution.webp" decoding="async" alt="三次问题定义 · 从现象到设计问题"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>三次问题定义 · 从现象到设计问题</figcaption></figure>
+          <figure class="evidence plate"><a class="zoom" href="assets/research/empathy-01.webp" data-gallery="definition"><img src="assets/research/empathy-01.webp" decoding="async" alt="同理心卡片 · 访谈材料 1"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>同理心卡片 · 访谈材料 1</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/research/empathy-02.webp" data-gallery="definition"><img src="assets/research/empathy-02.webp" decoding="async" alt="同理心卡片 · 访谈材料 2"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>同理心卡片 · 访谈材料 2</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/research/empathy-03.webp" data-gallery="definition"><img src="assets/research/empathy-03.webp" decoding="async" alt="同理心卡片 · 访谈材料 3"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>同理心卡片 · 访谈材料 3</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/research/empathy-04.webp" data-gallery="definition"><img src="assets/research/empathy-04.webp" decoding="async" alt="同理心卡片 · 访谈材料 4"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>同理心卡片 · 访谈材料 4</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/research/empathy-05.webp" data-gallery="definition"><img src="assets/research/empathy-05.webp" decoding="async" alt="同理心卡片 · 访谈材料 5"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>同理心卡片 · 访谈材料 5</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/research/empathy-06.webp" data-gallery="definition"><img src="assets/research/empathy-06.webp" decoding="async" alt="同理心卡片 · 访谈材料 6"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>同理心卡片 · 访谈材料 6</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/research/empathy-07.webp" data-gallery="definition"><img src="assets/research/empathy-07.webp" decoding="async" alt="同理心卡片 · 访谈材料 7"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>同理心卡片 · 访谈材料 7</figcaption></figure>
+        </div>
+      </details>
+      <aside class="hmw">
+        <p class="eyebrow">HOW MIGHT WE · 设计问题</p>
+        <p>如何让用户即使只记得画面，<br>也能快速找回以前收藏的参考图？</p>
+      </aside>
+    </section>
+
+    <section class="case-section wrap lined" id="solution">
+      <header class="section-lead"><div class="chapter"><span>04</span> IDEATE · 方案探索</div><h2>我们可以怎么做？</h2><p>调研后，团队先比较了三条可能方向：继续依赖相册与平台收藏、做跨平台集中管理、用画面记忆重新找回。现有证据显示，单一整理并不能解决“只记得画面”的困难。</p></header>
+      <div class="grid three flow">
+        <article><span lang="en">PATH 01</span><h3>继续用相册和收藏夹</h3><p>访谈中有人认为“直接在相册里面找”已经够用，但跨平台与记不起关键词的情况仍会卡住。</p></article>
+        <article><span lang="en">PATH 02</span><h3>做跨平台集中收藏</h3><p>24 人期待跨平台收藏，37 人希望自动整理；方向成立，但只“存得更整齐”还不够。</p></article>
+        <article><span lang="en">PATH 03</span><h3>按画面记忆找回</h3><p>33 人希望按图或描述找回，22 人只记得大致画面；这条方向直接回应核心困难。</p></article>
+      </div>
+      <div class="decision-card solution-detail">
+        <h3>关键判断 · 研究结论转成产品方向</h3>
+        <div class="decision-grid">
+          <div><span>当时判断</span><b>先接住收藏动作</b><p>用户不是先想好分类，而是在浏览与搜索中不断发现参考。</p></div>
+          <div><span>对应证据</span><b>37 想整理 / 33 想找回</b><p>期待改进为多选 n=52；另有 24 人希望跨平台收藏。</p></div>
+          <div><span>团队决定</span><b>先保证收—找—用闭环</b><p>不以展示 AI 为目标堆功能，优先把找回放进可用路径。</p></div>
+          <div><span>后续展开</span><b>产品概念、手绘与功能定义</b><p>下一章说明名称与定位，再用真实手绘和功能表承接这一判断。</p></div>
+        </div>
+      </div>
+      <p class="source">来源 · 前期调研问卷与访谈原话；开题便签与三次问题定义。方案方向为基于现有证据的整理表达，不新增虚构调研数据。</p>
+    </section>
+
+    <section class="band brand-band" id="brand">
+      <div class="case-section wrap">
+        <header class="section-lead"><div class="chapter"><span>05</span> DESIGN · 产品设计</div><h2>TADA! 是如何诞生的？</h2><p>TADA! 呼应重新找到灵感时的惊喜，「图然想起」把「图」嵌进「突然想起」。这是基于成品名称的字面释义，命名筛选记录待补。</p></header>
+        <div class="brand-compact">
+          <figure class="evidence logo-display"><a class="zoom" href="assets/design/logo-approved.webp" data-gallery="brand"><img src="assets/design/logo-approved.webp" decoding="async" alt="品牌标志定稿 · 灰绿文件夹、叠放照片与陶土橙日轮"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>品牌标志定稿 · 点击放大</figcaption></figure>
+          <div class="brand-detail">
+            <div><h3>从取景框到文件夹</h3><p>早期尝试取景框、照片叠层与抽象图形。定稿将文件夹与斜叠风景照合在一起，并让橙色日轮呼应感叹号。</p></div>
+            <div><h3>产品界面的配色</h3>
+              <div class="swatches">
+                <div><i style="--swatch:#fafaf8"></i><b>米白</b><span>#FAFAF8</span></div>
+                <div><i style="--swatch:#aa5c3d"></i><b>陶土橙</b><span>≈ #AA5C3D</span></div>
+                <div><i style="--swatch:#dfd8d3"></i><b>浅棕</b><span>#DFD8D3</span></div>
+              </div>
+              <p class="source">产品设计系统 · 中文 Noto Serif SC，拉丁文字 Newsreader。</p>
+            </div>
+          </div>
+        </div>
+        <details class="expand">
+          <summary>查看 5 张 Logo 探索与实际应用版本</summary>
+          <div class="grid three">
+            <figure class="evidence plate"><a class="zoom" href="assets/design/logo-study-1.webp" data-gallery="brand"><img src="assets/design/logo-study-1.webp" decoding="async" alt="构形探索 · 相框"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>构形探索 · 相框</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/design/logo-study-2.webp" data-gallery="brand"><img src="assets/design/logo-study-2.webp" decoding="async" alt="构形探索 · 照片叠片"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>构形探索 · 照片叠片</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/design/logo-study-3.webp" data-gallery="brand"><img src="assets/design/logo-study-3.webp" decoding="async" alt="构形探索 · 文件夹"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>构形探索 · 文件夹</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/design/logo-study-4.webp" data-gallery="brand"><img src="assets/design/logo-study-4.webp" decoding="async" alt="构形探索 · 图像取景边框"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>构形探索 · 图像取景边框</figcaption></figure><figure class="evidence plate"><a class="zoom" href="assets/design/logo-study-5.webp" data-gallery="brand"><img src="assets/design/logo-study-5.webp" decoding="async" alt="构形探索 · 抽象相框"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>构形探索 · 抽象相框</figcaption></figure>
+            <figure class="evidence plate"><a class="zoom" href="assets/design/logo-app.webp" data-gallery="brand"><img src="assets/design/logo-app.webp" decoding="async" alt="标志应用 · 现有产品代码中的透明底版本"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>标志应用 · 现有产品代码中的透明底版本</figcaption></figure>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="case-section wrap" id="sketches">
+      <header class="section-lead"><div class="chapter"><span>05</span> DESIGN · 产品设计</div><h2>从手绘草图到手机端界面</h2><p>在成为产品界面之前，两位组员先围绕手机随手收、按记忆找、创作时查看讨论功能。大屏与网页设想只作为过程参考，当前产品重点放在手机端。</p></header>
+      <div class="grid two">
+        <figure class="evidence"><a class="zoom" href="assets/research/sketch-mobile-tablet.webp" data-gallery="sketch"><img src="assets/research/sketch-mobile-tablet.webp" decoding="async" alt="手机与 iPad 早期手绘 · 收藏入口、悬浮窗与创作查看"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>手机 / iPad 手绘 · 收藏入口、悬浮窗与创作查看</figcaption></figure>
+        <figure class="evidence"><a class="zoom" href="assets/research/sketch-desktop.webp" data-gallery="sketch"><img src="assets/research/sketch-desktop.webp" decoding="async" alt="网页端早期手绘 · 文件夹、自动识别、AI 找图与日历"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>大屏过程稿 · 文件夹、自动识别与 AI 找图，不作为当前主线</figcaption></figure>
+      </div>
+      <div class="decision-card solution-detail">
+        <h3>从手绘到界面：保留下来的三个决定</h3>
+        <div class="decision-grid">
+          <div><span>手机端</span><b>先解决随手收</b><p>把导入入口放在窄屏容易触达的位置。</p></div>
+          <div><span>iPad / 大屏</span><b>大图预览与并排参考</b><p>从“边创作边看”的草图过渡到网页参考画板。</p></div>
+          <div><span>当前重点</span><b>手机端收、找、用</b><p>网页与大屏草图只说明想法来源，主线回到手机上的真实使用。</p></div>
+          <div><span>证据边界</span><b>独立 Figma 源稿待补</b><p>此处展示手绘原件，不伪造高保真过程稿。</p></div>
+        </div>
+      </div>
+      <p class="source">来源 · 开题目录两张手绘原稿；展示件保留原始内容，仅做脱敏与阅读方向处理。</p>
+    </section>
+
+    <section class="band key-design-step" id="features">
+      <div class="case-section wrap">
+        <header class="section-lead"><div class="chapter"><span>05</span> DESIGN · 产品设计</div><h2>核心功能：收 / 找 / 用 <span class="key-badge">重点</span></h2><p>功能定义直接承接前面的问题：先把素材收进来，再用模糊记忆找回去，最后放进项目和参考画板继续使用。</p></header>
+        <div class="grid three flow">
+          <article><span lang="en">SAVE</span><h3>收</h3><p>相册、链接、截屏与图图原贴导入；AI 识别与关键词提取辅助自动整理。</p></article>
+          <article><span lang="en">FIND</span><h3>找</h3><p>自然语言搜索、按颜色与场景描述筛选，让“只记得画面”也能开始检索。</p></article>
+          <article><span lang="en">USE</span><h3>用</h3><p>素材详情、项目归档与参考画板，把找到的图放回具体创作任务。</p></article>
+        </div>
+        <div class="grid three" style="margin-top:1rem">
+          <figure class="evidence screen"><a class="zoom" href="assets/product/mobile-import.webp" data-gallery="feature"><img src="assets/product/mobile-import.webp" decoding="async" alt="收 · 手机端导入弹层"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>收 · 手机端导入弹层</figcaption></figure>
+          <figure class="evidence screen"><a class="zoom" href="assets/product/library.webp" data-gallery="feature"><img src="assets/product/library.webp" decoding="async" alt="找 · 素材库搜索与筛选"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>找 · 素材库搜索与筛选</figcaption></figure>
+          <figure class="evidence screen"><a class="zoom" href="assets/product/projects.webp" data-gallery="feature"><img src="assets/product/projects.webp" decoding="async" alt="用 · 项目浏览与排序"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>用 · 项目浏览与排序</figcaption></figure>
+        </div>
+        <div class="decision-card solution-detail">
+          <h3>功能状态 · 已实现与待补证据</h3>
+          <div class="decision-grid">
+            <div><span>收 · 已实现</span><b>四类导入路径</b><p>相册、链接、截屏、图图原贴导入均有原始录像。</p></div>
+            <div><span>收 · 待验证</span><b>跨 App 悬浮窗</b><p>手绘中有构想，当前真机系统分享证据待补。</p></div>
+            <div><span>找 · 已实现</span><b>搜索与结果反馈</b><p>20 条查询验收记录显示能提交并反馈命中、漏召回与误报。</p></div>
+            <div><span>找 · 待改进</span><b>语义排序稳定性</b><p>9 条结果存在偏差，已作为迭代依据，不写成完全解决。</p></div>
+            <div><span>用 · 已实现</span><b>项目与素材详情</b><p>加入项目、项目页与详情操作有界面和录像证据。</p></div>
+            <div><span>用 · 待补</span><b>参考画板截图</b><p>草图与界面结构存在，完整真实截图仍待补。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section wrap key-design-step" id="implementation">
+      <header class="section-lead"><div class="chapter"><span>05</span> DESIGN · 产品设计</div><h2>手机端设计：收 / 找 / 用 <span class="key-badge">重点</span></h2><p>这一章只围绕手机端展开：用户如何在手机上导入素材、按画面找回，并把结果放进项目继续使用。网页端资料只作为辅助证据，不再作为主线介绍。</p></header>
+      <div class="flowmap-board" aria-labelledby="flowmap-title">
+        <div class="flowmap-head"><p class="eyebrow">PRODUCT FLOW · 收 / 找 / 用</p><h3 id="flowmap-title">产品使用流程图</h3><p class="flowmap-status">待补：整张总流程图</p></div>
+        <div class="flowmap-steps" role="img" aria-label="收、找、用三阶段结构，整体流程图待补">
+          <div class="flowmap-step"><b>01</b><span>收集素材</span><small>已补：收流程总览与四类分支图</small></div>
+          <span class="flowmap-arrow" aria-hidden="true">→</span>
+          <div class="flowmap-step"><b>02</b><span>按画面记忆搜索</span><small>已补：找流程图</small></div>
+          <span class="flowmap-arrow" aria-hidden="true">→</span>
+          <div class="flowmap-step"><b>03</b><span>放入项目或参考画板</span><small>已补：用流程简图与详图</small></div>
+        </div>
+        <p class="source">此处只等待补入贯穿「收 / 找 / 用」的整张总流程图；现有局部流程图都在下方三个标签中。</p>
+      </div>
+      <div class="flow-guide" id="flow" aria-labelledby="flow-title">
+        <div class="flow-heading">
+          <div><p class="eyebrow">USE THE PRODUCT · 收 / 找 / 用</p><h3 id="flow-title">用一段流程看懂产品</h3></div>
+        </div>
+        <div class="tabs enhanced" data-tabs="flow" aria-label="产品使用流程"><button type="button" data-tab="collect">01 收</button><button type="button" data-tab="find">02 找</button><button type="button" data-tab="use">03 用</button></div>
+        <div data-panels="flow">
+          <section class="flow-panel" data-panel="collect">
+            <div class="flow-panel-inner">
+              <div class="flow-media">
+                <figure class="evidence flow-figure flow-overview-card"><a class="zoom" href="assets/flow/collect-total.jpg" data-gallery="flow-collect"><img src="assets/flow/collect-total.jpg" decoding="async" alt="TADA 收用户流程总览，四种导入方式汇入同一个收藏库"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>收流程总览 · 四种导入方式汇入同一个收藏库</figcaption></figure>
+                <div class="collect-flow-grid grid two">
+                  <figure class="evidence flow-figure"><a class="zoom" href="assets/flow/collect-screenshot.png" data-gallery="flow-collect"><img src="assets/flow/collect-screenshot.png" decoding="async" alt="收使用流程局部图 · 通过截屏导入"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>手机截屏导入</figcaption></figure>
+                  <figure class="evidence flow-figure"><a class="zoom" href="assets/flow/collect-link.png" data-gallery="flow-collect"><img src="assets/flow/collect-link.png" decoding="async" alt="收使用流程局部图 · 通过链接导入"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>复制链接导入</figcaption></figure>
+                  <figure class="evidence flow-figure"><a class="zoom" href="assets/flow/collect-album.png" data-gallery="flow-collect"><img src="assets/flow/collect-album.png" decoding="async" alt="收使用流程局部图 · 通过相册批量导入"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>相册批量导入</figcaption></figure>
+                  <figure class="evidence flow-figure"><a class="zoom" href="assets/flow/collect-tutu.jpg" data-gallery="flow-collect"><img src="assets/flow/collect-tutu.jpg" decoding="async" alt="收使用流程局部图 · 通过图图从原贴导入"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>图图进阶模式 · 从原贴导入</figcaption></figure>
+                </div>
+              </div>
+              <div class="flow-copy">
+                <span class="step-index">STEP 01 · SAVE</span>
+                <h4>收：从现有入口导入</h4>
+                <dl>
+                  <dt>用户做什么</dt><dd>在导入入口选择图片，提交后进入素材库。</dd>
+                  <dt>界面如何反馈</dt><dd>已补入流程总览图与四条分支图，展示从原平台或本机进入收藏库的过程。</dd>
+                  <dt>解决什么问题</dt><dd>把散在设备和收藏平台的参考先放进同一个库。</dd>
+                </dl>
+                <p class="source">现有证据 · “收”流程总览图与截屏、链接、相册、图图原贴四条分支流程图。</p>
+              </div>
+            </div>
+          </section>
+          <section class="flow-panel" data-panel="find">
+            <div class="flow-panel-inner">
+              <div class="flow-media">
+                <figure class="evidence flow-figure"><a class="zoom" href="assets/flow/flow-find-01.png" data-gallery="flow-find"><img src="assets/flow/flow-find-01.png" decoding="async" alt="找使用流程图 · 从收藏库搜索到正常命中与无精准命中两条分支"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>找流程图 · 原图等比展示，点击可放大</figcaption></figure>
+              </div>
+              <div class="flow-copy">
+                <span class="step-index">STEP 02 · FIND</span>
+                <h4>找：按画面记忆搜索</h4>
+                <dl>
+                  <dt>用户做什么</dt><dd>用“只记得画面”的描述找图，而不是输入文件名。</dd>
+                  <dt>界面如何反馈</dt><dd>已补入真实流程图，呈现正常命中和无精准命中两条分支。</dd>
+                  <dt>解决什么问题</dt><dd>绕过记不清标题或关键词的障碍，同时让无匹配结果更容易判断。</dd>
+                </dl>
+                <p class="source">现有证据 · 找流程图原图；20 条搜索验收记录中 160/160 张建索引，9 条存在漏召回、排序偏差或误报。</p>
+              </div>
+            </div>
+          </section>
+          <section class="flow-panel" data-panel="use">
+            <div class="flow-panel-inner">
+              <div class="flow-media">
+                <div class="use-flow-grid grid two">
+                  <figure class="evidence flow-figure"><a class="zoom" href="assets/flow/flow-use-simple.png" data-gallery="flow-use"><img src="assets/flow/flow-use-simple.png" decoding="async" alt="用使用流程简图 · 素材进入项目或画板"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>用流程简图 · 原图等比展示，点击可放大</figcaption></figure>
+                  <figure class="evidence flow-figure"><a class="zoom" href="assets/flow/flow-use-detail.png" data-gallery="flow-use"><img src="assets/flow/flow-use-detail.png" decoding="async" alt="用使用流程详图 · 项目与参考画板操作"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>用流程详图 · 原图等比展示，点击可放大</figcaption></figure>
+                </div>
+              </div>
+              <div class="flow-copy">
+                <span class="step-index">STEP 03 · USE</span>
+                <h4>用：放进项目或画板</h4>
+                <dl>
+                  <dt>用户做什么</dt><dd>把找到的图放进项目，或在参考画板中查看、整理。</dd>
+                  <dt>界面如何反馈</dt><dd>已补入简图和详图两张局部流程图。</dd>
+                  <dt>解决什么问题</dt><dd>让收藏回到创作现场，而不只是留在库里。</dd>
+                </dl>
+                <p class="source">现有证据 · 用流程简图与详图原图；图片详情与项目浏览、排序截图在界面留档中。</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="split tech">
+        <div><h3>实现路径</h3><p>接手仓库的前端使用 React 与 Vite，后端使用 FastAPI。导入后的图片进入素材库，可由本地 Chinese-CLIP 支持图文检索。配置千问后，产品能生成图片描述与标签。</p></div>
+        <div><h3>演示与本机的范围</h3><p>公开演示版使用共享素材库，提供网页导入、搜索与项目入口。本机版接入小红书及花瓣收藏，小红书自动同步有项目记录。手机可见网页、快捷指令和微信导入入口，真机验收见测试章节。</p></div>
+      </div>
+      <aside class="prototype-note"><b>草图里的悬浮收藏</b><p>早期草图设想在其他 App 内通过悬浮窗直接收图。现有手机端采用网页选图或由用户主动分享；创作时的并排参考由网页参考画板承担。</p></aside>
+      <p class="source">来源 · TADA-board README、前后端源码、TADA-fetch 参考画板及线上页面。</p>
+    </section>
+    <section class="band compact-band" id="testing">
+      <div class="case-section wrap">
+        <header class="section-lead compact-lead"><div class="chapter"><span>06</span> TEST & ITERATE · 测试迭代</div><h2>我们如何不断优化？</h2><p>制作产品时，团队用 20 条查询检查本地检索，并用电脑验收记录核对导入、详情与项目流程；下方小板块展示已落实到界面的五组前后对比。</p></header>
+        <div class="metrics test-metrics compact-metrics"><div><b>160</b><span>已建立索引的验收图片</span></div><div><b>20</b><span>正常返回的搜索请求</span></div><div><b>9</b><span>有漏召回、排序偏差或误报</span></div></div>
+        <div class="test-cases grid three compact-cases"><div><h3>海</h3><p><b>1 张 · 符合</b>，有浪和人影的海边图。</p></div><div><h3>颜色很多</h3><p><b>4 张 · 基本符合</b>，返回多色图像。</p></div><div><h3>云</h3><p><b>0 张 · 漏召回</b>，验收库已有云层相关素材。</p></div></div>
+      <div id="iteration" class="iteration-mini">
+      <p class="source iteration-source">口径 · 用户意见来自用户测试反馈文档与改版 PPT；老师建议、团队自测 / AI 走查单独标注，不并入用户测试人数。</p>
+      <div class="iteration-board">
+        <div class="tabs enhanced" data-tabs="iteration" aria-label="改前改后对比"><button type="button" data-tab="home">01 首页</button><button type="button" data-tab="search">02 搜索结果</button><button type="button" data-tab="project">03 加入项目</button><button type="button" data-tab="projects">04 项目页</button><button type="button" data-tab="import">05 导入</button></div>
+        <div data-panels="iteration">
+          <section class="iteration-card" data-panel="home">
+            <header class="iteration-card-head"><span>01</span><h4>首页：搜索成为主角</h4></header>
+            <div class="iteration-pair">
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/01-home-before-2.0.png" data-gallery="iteration"><img src="assets/iteration/01-home-before-2.0.png" decoding="async" alt="2.0 首页：搜索框、待确认提示与图墙并列，底部导航写作素材库"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改前 · 2.0</b>搜索、提示与图墙同时争夺注意力。</figcaption></figure>
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/01-home-after-3.0.png" data-gallery="iteration"><img src="assets/iteration/01-home-after-3.0.png" decoding="async" alt="3.0 首页：搜索框置顶，收藏库导航与长按多选提示"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改后 · 3.0</b>标题、提示、图墙分层，搜索成为唯一主角。</figcaption></figure>
+            </div>
+            <dl class="iteration-notes"><div><dt>问题 / 反馈</dt><dd>"看上去设计得非常好看，非常前卫，但是实际上操作起来就是有一些眼花缭乱。"<span>用户原话 · 用户测试反馈文档</span></dd></div><div><dt>界面调整</dt><dd>首页只留搜索一个主角；文字分出层级，可点击项才用陶土橙。</dd></div><div><dt>对用户的作用</dt><dd>先知道从哪里搜，再决定是否导入或整理，降低首次使用的选择成本。</dd></div></dl>
+            <p class="source">来源 · 改前改后 / 01-首页搜索成主角文字分层 / 说明.txt；用户测试反馈文档；3.0 改版 PPT。</p>
+          </section>
+          <section class="iteration-card" data-panel="search">
+            <header class="iteration-card-head"><span>02</span><h4>搜索结果：缩小到真正相似的图</h4></header>
+            <div class="iteration-pair">
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/02-search-before-2.0.png" data-gallery="iteration"><img src="assets/iteration/02-search-before-2.0.png" decoding="async" alt="2.0 搜索紫色小花：提示收藏里没有这张，下方仍混有多张相似与弱相关素材"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改前 · 2.0</b>"没有这张"与一堆弱相关结果混在一起。</figcaption></figure>
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/02-search-after-3.0.png" data-gallery="iteration"><img src="assets/iteration/02-search-after-3.0.png" decoding="async" alt="3.0 搜索紫色小花：显示从209张收藏里找出0张，并提示收藏库里没找到很像的"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改后 · 3.0</b>先说明"找出 0 张"，再给出没找到很像的提示。</figcaption></figure>
+            </div>
+            <dl class="iteration-notes"><div><dt>问题 / 反馈</dt><dd>"搜『紫色小花』跳出太多，能不能缩小？"<span>反馈原话 · 3.0 改版 PPT</span></dd></div><div><dt>界面调整</dt><dd>高度相似的结果优先显示；接近的结果放到分隔线下，并说明检索口径。</dd></div><div><dt>对用户的作用</dt><dd>按画面记忆找图时，更容易判断"找到了"还是"库里没有"。</dd></div></dl>
+            <p class="source">来源 · 改前改后 / 03-搜索结果 / 说明.txt；3.0 改版 PPT 用户原话页。</p>
+          </section>
+          <section class="iteration-card" data-panel="project">
+            <header class="iteration-card-head"><span>03</span><h4>加入项目：在底部面板完成选择</h4></header>
+            <div class="iteration-pair">
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/03-add-to-project-before-2.0.png" data-gallery="iteration"><img src="assets/iteration/03-add-to-project-before-2.0.png" decoding="async" alt="2.0 加入项目：底部面板列出项目与张数，右上角为关闭按钮"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改前 · 2.0</b>项目列表以关闭按钮收尾，入口重心偏弱。</figcaption></figure>
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/03-add-to-project-after-3.0.png" data-gallery="iteration"><img src="assets/iteration/03-add-to-project-after-3.0.png" decoding="async" alt="3.0 加入项目：底部面板保留项目列表，右上角为新增项目入口"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改后 · 3.0</b>底部面板保留项目列表，并加入新建项目入口。</figcaption></figure>
+            </div>
+            <dl class="iteration-notes"><div><dt>问题 / 反馈</dt><dd>反馈文档把"加入项目"列为需要突出的核心操作。<span>团队整理 · 界面优化建议</span></dd></div><div><dt>界面调整</dt><dd>从图片进入"加入项目"后，直接在底部面板选择项目，必要时新建项目。</dd></div><div><dt>对用户的作用</dt><dd>收藏后更快进入整理，不必离开当前图片去找项目入口。</dd></div></dl>
+            <p class="source">来源 · 改前改后 / 06-加入项目 / 说明.txt；用户测试反馈文档 / 界面优化。</p>
+          </section>
+          <section class="iteration-card" data-panel="projects">
+            <header class="iteration-card-head"><span>04</span><h4>项目页：自动分类与手动项目分开</h4></header>
+            <div class="iteration-pair">
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/04-projects-before-2.0.png" data-gallery="iteration"><img src="assets/iteration/04-projects-before-2.0.png" decoding="async" alt="2.0 项目页：自动分类项目与手动项目混排在项目网格中"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改前 · 2.0</b>自动分类只藏在少量"自动"标签里。</figcaption></figure>
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/04-projects-after-3.0.png" data-gallery="iteration"><img src="assets/iteration/04-projects-after-3.0.png" decoding="async" alt="3.0 项目页：自动分类独立成组，显示7组与素材来源，并提示长按可以整理"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改后 · 3.0</b>自动分类独立成组，写明来源、张数与整理方式。</figcaption></figure>
+            </div>
+            <dl class="iteration-notes"><div><dt>问题 / 反馈</dt><dd>"项目这个东西，和收藏的文件夹都差不多了呀。"<span>用户原话 · 用户测试反馈文档</span></dd></div><div><dt>界面调整</dt><dd>顶部明确写"自动分类"，每组注明来源；手动项目仍可长按整理。</dd></div><div><dt>对用户的作用</dt><dd>看清 TADA 与普通文件夹的区别，自动归类后仍保留个人管理。</dd></div></dl>
+            <p class="source">来源 · 改前改后 / 07-项目页自动分类手动分类 / 说明.txt；用户测试反馈文档；3.0 改版 PPT 项目页。</p>
+          </section>
+          <section class="iteration-card" data-panel="import">
+            <header class="iteration-card-head"><span>05</span><h4>导入：把三条路径说清楚</h4></header>
+            <div class="iteration-pair">
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/05-import-before-2.0.png" data-gallery="iteration"><img src="assets/iteration/05-import-before-2.0.png" decoding="async" alt="2.0 导入图片：全屏弹窗分三段说明相册、iPhone/iPad 与安卓小红书"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改前 · 2.0</b>全屏弹窗文字密集，安卓路径另写"小红书专用"。</figcaption></figure>
+              <figure class="iteration-shot"><a class="zoom" href="assets/iteration/05-import-after-3.0.png" data-gallery="iteration"><img src="assets/iteration/05-import-after-3.0.png" decoding="async" alt="3.0 收进 TADA：底部面板分三段展示相册文件、iPhone/iPad 与安卓图图"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>改后 · 3.0</b>改为底部面板，相册 / iPhone·iPad / 安卓图图三段并列。</figcaption></figure>
+            </div>
+            <dl class="iteration-notes"><div><dt>问题 / 反馈</dt><dd>"刚开始感觉太复杂了，不知道从哪里导入。"<span>用户原话 · 用户测试反馈文档</span></dd></div><div><dt>界面调整</dt><dd>标题改为"收进 TADA"，三段路径与对应按钮对齐，选图按钮更突出。</dd></div><div><dt>对用户的作用</dt><dd>看到素材后更快找到自己的入口，减少在平台与收藏库之间来回切换。</dd></div></dl>
+            <p class="source">来源 · 改前改后 / 11-导入 / 说明.txt；用户测试反馈文档。</p>
+          </section>
+        </div>
+      </div>
+      </div>
+
+        <details class="expand">
+          <summary>查看完整验证记录与截图</summary>
+          <div class="decision-card status-card">
+            <h3>当前验证边界</h3>
+            <div class="decision-grid">
+              <div><span>已核对</span><b>本机与 Edge 流程</b><p>160 张建索引、20 条查询、9 条结果异常；导入新增、重复与项目排序有截图。</p></div>
+              <div><span>反馈口径</span><b>两位真实用户</b><p>两位真实用户参与核心产品体验测试；PPT 中的老师建议与团队/AI 走查单独标注。</p></div>
+              <div><span>待确认</span><b>手机与平板真机</b><p>390 / 820 px 为浏览器视口模拟，不能替代 iPhone / iPad 真机系统分享与通知验收。</p></div>
+              <div><span>构想 / 未验证</span><b>悬浮收藏与自动标签</b><p>草图和讨论记录存在；跨 App 悬浮窗、千问描述与自动分类在当前证据中未确认。</p></div>
+            </div>
+          </div>
+          <details class="expand results" id="search-records">
+            <summary>查看全部 20 条搜索结果</summary>
+            <div class="filter enhanced"><label for="query-category">筛选查询类型</label><select id="query-category"><option value="">全部</option><option>单字</option><option>口语化描述</option><option>场景与氛围</option><option>颜色</option><option>无对应素材</option></select><span id="query-count" role="status">20 条</span></div>
+            <div class="table-wrap" tabindex="0" aria-label="搜索验收记录，可横向滚动">
+              <table><thead><tr><th scope="col">测试词</th><th scope="col">类型</th><th scope="col">返回</th><th scope="col">评估</th><th scope="col">记录</th></tr></thead>
+                <tbody><tr data-category="单字"><th scope="row">海</th><td>单字</td><td>1 张</td><td>符合</td><td>找到 1 张海边图，画面有浪和人影。</td></tr>
+                <tr data-category="单字"><th scope="row">花</th><td>单字</td><td>10 张</td><td>排序偏差</td><td>前两名是花形反光装置，真实雏菊照片排第 8。</td></tr>
+                <tr data-category="单字"><th scope="row">云</th><td>单字</td><td>0 张</td><td>漏召回</td><td>未返回结果，但库里有可见云层的锁屏截图。</td></tr>
+                <tr data-category="口语化描述"><th scope="row">蓝蓝的</th><td>口语化描述</td><td>24 张</td><td>基本符合</td><td>首图为深蓝底图，前列素材也有明显蓝色。</td></tr>
+                <tr data-category="口语化描述"><th scope="row">有点旧旧的</th><td>口语化描述</td><td>8 张</td><td>基本符合</td><td>首图是植物围绕的旧墙，后续有复古质感素材。</td></tr>
+                <tr data-category="口语化描述"><th scope="row">看起来软软糯糯的</th><td>口语化描述</td><td>18 张</td><td>排序偏差</td><td>岩石纹理排首位，软糖照片排第 2。</td></tr>
+                <tr data-category="场景与氛围"><th scope="row">海边傍晚，太阳快落山的时候</th><td>场景与氛围</td><td>1 张</td><td>基本符合</td><td>唯一结果是有余晖的海边暮色。</td></tr>
+                <tr data-category="场景与氛围"><th scope="row">雨天街道上有霓虹灯倒影</th><td>场景与氛围</td><td>0 张</td><td>未见明确样图</td><td>对照演示图后未见明确对应素材，空结果合理。</td></tr>
+                <tr data-category="场景与氛围"><th scope="row">咖啡店窗边的桌面静物</th><td>场景与氛围</td><td>0 张</td><td>未见明确样图</td><td>对照演示图后未见明确对应素材，空结果合理。</td></tr>
+                <tr data-category="场景与氛围"><th scope="row">老房子里阳光照在木地板上的感觉</th><td>场景与氛围</td><td>0 张</td><td>未见明确样图</td><td>有阳光的旧建筑外墙，但未见对应的室内木地板场景。</td></tr>
+                <tr data-category="颜色"><th scope="row">颜色很多</th><td>颜色</td><td>4 张</td><td>基本符合</td><td>三张画面有多种醒目色彩，另一张主要是橙色和粉色。</td></tr>
+                <tr data-category="颜色"><th scope="row">蓝绿色为主、看起来很清爽的配色</th><td>颜色</td><td>24 张</td><td>排序偏差</td><td>首图以金褐和黑色为主，蓝绿色只是局部反光。</td></tr>
+                <tr data-category="颜色"><th scope="row">暖黄色和棕色搭配的复古色调</th><td>颜色</td><td>16 张</td><td>排序偏差</td><td>前三名混入深绿花朵照和多色装置，黄褐几何图排第 5。</td></tr>
+                <tr data-category="颜色"><th scope="row">粉色和紫色混在一起的渐变</th><td>颜色</td><td>22 张</td><td>基本符合</td><td>首图从紫蓝过渡到粉色，后续多张为以粉色为主的柔和渐变。</td></tr>
+                <tr data-category="颜色"><th scope="row">黑白、高对比、很有冲击力的画面</th><td>颜色</td><td>24 张</td><td>排序偏差</td><td>前列混入粉色和蓝色图，黑白高对比图排第 5。</td></tr>
+                <tr data-category="无对应素材"><th scope="row">一只透明的橙色鲸鱼在骑自行车</th><td>无对应素材</td><td>24 张</td><td>误报</td><td>前列有黄橙海报，鲸鱼和骑自行车的动作均未匹配。</td></tr>
+                <tr data-category="无对应素材"><th scope="row">会发光的蘑菇房子</th><td>无对应素材</td><td>0 张</td><td>符合预期</td><td>库里没有对应素材，返回空。</td></tr>
+                <tr data-category="无对应素材"><th scope="row">长着翅膀的茶杯</th><td>无对应素材</td><td>3 张</td><td>误报</td><td>首图是硬翅风筝设计板，另有文字版式和反光装置。</td></tr>
+                <tr data-category="无对应素材"><th scope="row">月亮形状的草莓蛋糕</th><td>无对应素材</td><td>5 张</td><td>误报</td><td>前 3 张为月亮图文和月相图，未匹配草莓蛋糕。</td></tr>
+                <tr data-category="无对应素材"><th scope="row">水下开着的洗衣店</th><td>无对应素材</td><td>0 张</td><td>符合预期</td><td>库里没有对应素材，返回空。</td></tr></tbody>
+              </table>
+            </div>
+          </details>
+          <div class="subhead"><h3>界面与导入验收</h3><p>Edge 通过了新增两张、重复两张与查看刚导入等流程。820 px 触屏模拟出现弹层裁切，引导页卡片有黑块，超限提示与测试场景存在偏差。</p></div>
+          <div class="grid three">
+            <figure class="evidence plate"><a class="zoom" href="assets/testing/search-no-cloud.png" data-gallery="test"><img src="assets/testing/search-no-cloud.png" decoding="async" alt="搜索实测 · 「云」的空结果"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>搜索实测 · 「云」的空结果</figcaption></figure>
+            <figure class="evidence plate"><a class="zoom" href="assets/testing/import-added.png" data-gallery="test"><img src="assets/testing/import-added.png" decoding="async" alt="本机导入 · 成功新增两张"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>本机导入 · 成功新增两张</figcaption></figure>
+            <figure class="evidence plate"><a class="zoom" href="assets/testing/import-duplicates.png" data-gallery="test"><img src="assets/testing/import-duplicates.png" decoding="async" alt="本机导入 · 两张已在库里"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>本机导入 · 两张已在库里</figcaption></figure>
+          </div>
+          <details class="expand">
+            <summary>查看其余验收截图与待验证项目</summary>
+            <div class="grid three">
+              <figure class="evidence plate"><a class="zoom" href="assets/testing/import-panel-820.png" data-gallery="test"><img src="assets/testing/import-panel-820.png" decoding="async" alt="820 px 视口 · 导入面板裁切"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>820 px 视口 · 导入面板裁切</figcaption></figure>
+              <figure class="evidence plate"><a class="zoom" href="assets/testing/import-recent.png" data-gallery="test"><img src="assets/testing/import-recent.png" decoding="async" alt="新导入列表 · 两张合成测试图"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>新导入列表 · 两张合成测试图</figcaption></figure>
+              <figure class="evidence plate"><a class="zoom" href="assets/testing/import-size-message.png" data-gallery="test"><img src="assets/testing/import-size-message.png" decoding="async" alt="文件超限 · 提示与测试条件的偏差"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>文件超限 · 提示与测试条件的偏差</figcaption></figure>
+              <figure class="evidence plate"><a class="zoom" href="assets/testing/intro-black-textures.png" data-gallery="test"><img src="assets/testing/intro-black-textures.png" decoding="async" alt="引导页 · 卡片黑块"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>引导页 · 卡片黑块</figcaption></figure>
+              <figure class="evidence plate"><a class="zoom" href="assets/testing/design-search.png" data-gallery="test"><img src="assets/testing/design-search.png" decoding="async" alt="设计系统 · 标题被挤成竖排"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>设计系统 · 标题被挤成竖排</figcaption></figure>
+            </div>
+            <p>iPad／iPhone 真机、Safari 相册多选、系统分享与快捷指令、微信实发、通知反馈、千问分析和搜索修复复测仍待补证据。</p>
+          </details>
+        </details>
+        <p class="source">来源 · 《电脑验收记录》《搜索逐句结果》及两份逐句 JSON。</p>
+      </div>
+    </section>
+
+    <section class="case-section wrap" id="product-archive">
+      <div class="subhead"><h3>最终产品界面留档</h3><p>以下为最后测试修改后的真实产品界面，放在测试迭代之后作为最终效果展示；网页端资料仅作补充，不再作为产品设计主线。</p></div>
+      <div class="product-board">
+        <div class="tabs enhanced" data-tabs="product" aria-label="产品界面"><button type="button" data-tab="search">搜索</button><button type="button" data-tab="import">导入</button><button type="button" data-tab="projects">项目与项目详情</button><button type="button" data-tab="detail">素材详情</button><button type="button" data-tab="board">灵感板 / 参考画板</button><button type="button" data-tab="calendar">日历</button><button type="button" data-tab="settings">设置</button><button type="button" data-tab="guide">产品引导与辅助</button><button type="button" data-tab="floating">图图悬浮窗</button><button type="button" data-tab="system">设计系统</button></div>
+        <div data-panels="product">
+          <section data-panel="search"><div class="grid two mobile-shots">
+              <figure class="evidence screen"><a class="zoom" href="assets/product/library.webp" data-gallery="product"><img src="assets/product/library.webp" decoding="async" alt="线上素材库 · 搜索、筛选与素材浏览。第三方缩略图经遮挡。"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>线上素材库 · 搜索、筛选与素材浏览</figcaption></figure>
+              <figure class="evidence screen"><a class="zoom" href="assets/product/mobile.webp" data-gallery="product"><img src="assets/product/mobile.webp" decoding="async" alt="线上素材库 · 390 px 浏览器视口中的搜索区"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>线上素材库 · 390 px 浏览器视口，非真机验收</figcaption></figure>
+          </div></section>
+          <section data-panel="import"><figure class="evidence screen"><a class="zoom" href="assets/product/mobile-import.webp" data-gallery="product"><img src="assets/product/mobile-import.webp" decoding="async" alt="线上导入弹层 · 手机相册与快捷指令入口"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>线上导入弹层 · 手机相册与快捷指令入口；浏览器视口，非真机系统分享验收</figcaption></figure></section>
+          <section data-panel="projects"><figure class="evidence screen"><a class="zoom" href="assets/product/projects.webp" data-gallery="product"><img src="assets/product/projects.webp" decoding="async" alt="电脑验收 · 项目浏览与排序面板"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>电脑验收 · 项目浏览与排序面板</figcaption></figure></section>
+          <section data-panel="detail"><figure class="evidence screen"><a class="zoom" href="assets/product/detail.webp" data-gallery="product"><img src="assets/product/detail.webp" decoding="async" alt="电脑验收 · 素材详情的标签和操作区"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>电脑验收 · 素材详情的标签和操作区</figcaption></figure></section>
+          <section data-panel="board"><div class="placeholder" role="img" aria-label="待补：灵感板 / 参考画板界面"><b>待补：灵感板 / 参考画板界面</b><span>用户后续提供真实界面截图；当前不生成替代画面</span></div></section>
+          <section data-panel="calendar"><div class="placeholder" role="img" aria-label="待补：日历界面留档"><b>待补：日历界面留档</b><span>用户后续提供真实日历与热力图截图，替换时保留同一面板位置</span></div></section>
+          <section data-panel="settings"><div class="placeholder" role="img" aria-label="待补：设置界面留档"><b>待补：设置界面留档</b><span>用户后续提供真实设置页截图，替换时保留同一面板位置</span></div></section>
+          <section data-panel="guide"><div class="guide-videos grid three">
+            <figure><video controls playsinline preload="metadata" aria-label="产品引导录像"><source src="assets/showcase/product-guide.mp4" type="video/mp4"><a href="assets/showcase/product-guide.mp4">打开录像</a></video><figcaption>产品引导 · 原始录像等比展示</figcaption></figure>
+            <figure><video controls playsinline preload="metadata" aria-label="项目自动分类展示录像"><source src="assets/showcase/auto-category.mp4" type="video/mp4"><a href="assets/showcase/auto-category.mp4">打开录像</a></video><figcaption>补充 · 项目自动分类展示，原始录像等比展示</figcaption></figure>
+            <figure><video controls playsinline preload="metadata" aria-label="帮助运用产品的小游戏录像"><source src="assets/showcase/helper-game.mp4" type="video/mp4"><a href="assets/showcase/helper-game.mp4">打开录像</a></video><figcaption>帮助运用产品的小游戏 · 原始录像等比展示</figcaption></figure>
+          </div></section>
+          <section data-panel="floating"><div class="placeholder" role="img" aria-label="待补：移动端图图悬浮窗界面"><b>待补：移动端图图悬浮窗界面</b><span>用户后续将图片放入文件夹；此处不是 iPhone / iPad 真机验收</span></div></section>
+          <section data-panel="system"><figure class="evidence screen"><a class="zoom" href="assets/product/design-system.webp" data-gallery="product"><img src="assets/product/design-system.webp" decoding="async" alt="线上设计系统 · 米白、陶土橙、浅棕与文字层级"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>线上设计系统 · 米白、陶土橙、浅棕与文字层级</figcaption></figure></section>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section wrap" id="demo">
+      <header class="section-lead"><div class="chapter"><span>07</span> FINAL PRODUCT · 最终成果</div><h2>体验完整的 TADA!</h2><p>最终成果不只靠静态截图说明。下面保留原始全流程录像，并用三段核心操作片段展示产品如何从导入走到找回与使用。</p></header>
+      <div class="demo-board" id="demo-board">
+        <figure class="demo-main"><video controls playsinline preload="metadata" poster="assets/showcase/full-flow-poster.jpg" aria-label="TADA 全流程展示原始录像"><source src="assets/showcase/full-flow.mp4" type="video/mp4"><a href="assets/showcase/full-flow.mp4">打开录像</a></video><figcaption>全流程展示 · 原始竖屏录像等比播放</figcaption></figure>
+        <div class="demo-clips">
+          <div class="demo-clips-head"><h3>核心流程录像</h3><p>三段片段分别对应收、找、用；均为原始录像，按视频自身比例播放。</p></div>
+          <div class="demo-clip-grid">
+            <figure><video controls playsinline preload="metadata" aria-label="收 · 图图原贴导入"><source src="assets/flow/collect-tutu.mp4" type="video/mp4"><a href="assets/flow/collect-tutu.mp4">打开录像</a></video><figcaption>收 · 图图原贴导入</figcaption></figure>
+            <figure><video controls playsinline preload="metadata" aria-label="找 · 按画面记忆搜索"><source src="assets/flow/flow-find-01.mp4" type="video/mp4"><a href="assets/flow/flow-find-01.mp4">打开录像</a></video><figcaption>找 · 按画面记忆搜索</figcaption></figure>
+            <figure><video controls playsinline preload="metadata" aria-label="用 · 素材进入项目"><source src="assets/flow/flow-use-01.mp4" type="video/mp4"><a href="assets/flow/flow-use-01.mp4">打开录像</a></video><figcaption>用 · 素材进入项目</figcaption></figure>
+          </div>
+        </div>
+      </div>
+      <p class="source">来源 · 06 最终成品展示目录中的原始全流程录像与三段使用流程录像。</p>
+    </section>
+
+    <section class="band compact-band" id="outcome">
+      <div class="case-section wrap">
+        <header class="section-lead compact-lead"><div class="chapter"><span>07</span> FINAL PRODUCT · 最终成果</div><h2>在作品集里直接体验 TADA!</h2><p>从《我明明收藏过》到 TADA!，课程原型把散落的参考图放回同一个使用流程。用户可以随手收图、按记忆描述找图，再放进项目或参考画板。</p></header>
+        <div class="split compact-summary">
+          <div><h3>设计过程带来的认识</h3><p>复用数据改变了开题假设，促使团队从「整理收藏」走向「按视觉记忆找回」。可运行原型也让原先只在草图里的交互变成可逐条验证的问题。</p></div>
+          <div><h3>待完善</h3><p>继续验证视觉描述的排序与无匹配判断。补充真机导入和通知的测试，并归档 Figma 原稿及完整授权的演示画面。</p></div>
+        </div>
+        <div class="experience-board" id="product-experience">
+          <div class="experience-copy">
+            <p class="eyebrow">FINAL PRODUCT EXPERIENCE · 最终产品体验</p>
+            <h3>直接在作品集里体验 TADA!</h3>
+          </div>
+          <div class="phone-stage">
+            <div class="tada-phone-embed">
+              <div class="tada-phone-scale">
+                <div class="tada-phone-shell">
+                  <div class="tada-phone-screen">
+                    <span class="tada-phone-island" aria-hidden="true"></span>
+                    <iframe id="product-frame" title="TADA! 图然想起" src="https://shoucang.165-22-254-236.sslip.io/?frame=0" width="390" height="844" allow="clipboard-read; clipboard-write; fullscreen"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-cta">
+          <div><p class="eyebrow">TRY THE PRODUCT · 产品链接</p><h3>TADA!「图然想起」在线演示</h3><p>如果所在网络可以访问线上版本，也可通过下方链接打开产品与引导页。</p></div>
+          <div class="actions"><a class="button primary large" href="https://shoucang.165-22-254-236.sslip.io/" target="_blank" rel="noopener">打开产品演示 <span aria-hidden="true">↗</span></a><a class="button outline" href="https://shoucang.165-22-254-236.sslip.io/intro" target="_blank" rel="noopener">查看产品引导</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap foot-inner"><div><a class="wordmark" href="#top">TADA<span>!</span></a><p>图然想起 · 湖北美术学院联合设计训练营</p></div><div class="actions"><a class="button outline" href="presentation.html">PPT 汇报版</a><a class="button outline" href="#top">回到顶部</a></div></div>
+  </footer>
+  <dialog id="lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-toolbar"><span id="lightbox-count"></span><button type="button" class="close-lightbox" aria-label="关闭图片">关闭 ×</button></div>
+    <figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+    <div class="lightbox-nav"><button type="button" data-lightbox-step="-1">上一张</button><button type="button" data-lightbox-step="1">下一张</button></div>
+  </dialog>
+</body>
+</html>
