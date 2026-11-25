@@ -4,8 +4,9 @@
 /*.py
 /*.txt
 
-# Unused original copy of the long demo video (site uses full-flow-faststart.mp4)
+# Unused original copies of the long demo video (site uses full-flow-faststart.mp4)
 assets/showcase/full-flow.mp4
+portfolio/assets/showcase/full-flow.mp4
 
 # Git / editor
 .vscode/
