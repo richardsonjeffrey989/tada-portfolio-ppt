@@ -540,6 +540,17 @@ dialog.addEventListener("keydown", event => {
 });
 dialog.addEventListener("close", () => galleryOpener?.focus({ preventScroll:true }));
 
+function startCoverVideo() {
+  const v = document.getElementById("cover-video");
+  if (!v || v.dataset.started) return;
+  v.dataset.started = "1";
+  v.src = "assets/cover/tutorial.mp4";
+  const played = v.play();
+  if (played && typeof played.catch === "function") played.catch(() => {});
+}
+
 window.addEventListener("resize", () => { fitAll(); fitTadaEmbeds(stage); });
 requestAnimationFrame(() => { fitAll(); showSlide(0); });
 setTimeout(fitAll, 500);
+if (document.readyState === "complete") setTimeout(startCoverVideo, 100);
+else window.addEventListener("load", () => setTimeout(startCoverVideo, 100), { once:true });
