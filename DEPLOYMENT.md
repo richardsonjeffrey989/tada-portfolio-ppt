@@ -3,8 +3,9 @@
 ## 1. 基本信息
 
 - GitHub 仓库：`https://github.com/richardsonjeffrey989/tada-portfolio-ppt`
-- 公开网址（首页）：`https://richardsonjeffrey989.github.io/tada-portfolio-ppt/`
+- 公开网址（首页 / PPT 汇报模式）：`https://richardsonjeffrey989.github.io/tada-portfolio-ppt/`
 - PPT 汇报模式直达：`https://richardsonjeffrey989.github.io/tada-portfolio-ppt/presentation.html`
+- 普通作品集网页模式：`https://richardsonjeffrey989.github.io/tada-portfolio-ppt/portfolio/`
 - 部署方式：GitHub Pages，从 `main` 分支根目录发布（`legacy` branch deploy）
 - 仓库公开范围：**公开仓库**。GitHub Pages 免费方案要求公开仓库；仅发布网站运行必需文件。
 
