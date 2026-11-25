@@ -247,6 +247,7 @@ function warmImagesForSlide(index) {
 
 function showSlide(index) {
   current = Math.max(0, Math.min(slides.length - 1, index));
+  if (index >= 5) preloadDefine();
   if (preloadState.warm) { warmImagesForSlide(current); warmVideosForSlide(current); }
   slides.forEach((slide, i) => {
     const active = i === current;
@@ -425,8 +426,14 @@ function initIterate6() {
 initTabs(stage);
 initAffinity(stage);
 initFilters(stage);
-const definePreload = new Image();
-definePreload.src = "assets/define/用户画像和旅程地图.webp";
+let definePreloaded = false;
+function preloadDefine() {
+  if (definePreloaded) return;
+  definePreloaded = true;
+  const img = new Image();
+  img.decoding = "async";
+  img.src = "assets/define/用户画像和旅程地图.webp";
+}
 
 function initPresentationPreparer() {
   const enabled = new URLSearchParams(location.search).has("prepare");
