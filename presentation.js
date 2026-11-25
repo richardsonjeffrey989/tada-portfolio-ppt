@@ -374,6 +374,9 @@ function initIterate6() {
 initTabs(stage);
 initAffinity(stage);
 initFilters(stage);
+const definePreload = new Image();
+definePreload.src = "assets/define/用户画像和旅程地图.webp";
+
 initFeatureDetails();
 initIterate6();
 initFinalProductFallback();
