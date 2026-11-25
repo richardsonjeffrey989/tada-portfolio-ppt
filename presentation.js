@@ -193,8 +193,61 @@ function updateNav(index) {
   });
 }
 
+const preloadState = { images:new Map(), videos:new Map(), warm:false };
+
+function preloadImage(src) {
+  if (!src || preloadState.images.has(src)) return preloadState.images.get(src);
+  const img = new Image();
+  img.decoding = "async";
+  const entry = { img, done:false, ok:false };
+  img.onload = () => { entry.done = true; entry.ok = true; };
+  img.onerror = () => { entry.done = true; entry.ok = false; };
+  img.src = src;
+  preloadState.images.set(src, entry);
+  return entry;
+}
+
+function warmVideosForSlide(index) {
+  const targets = [];
+  if (index >= 8 && index <= 13) {
+    slides[9]?.querySelectorAll("video[data-src]").forEach(v => targets.push(v));
+    slides[10]?.querySelectorAll("video[data-src]").forEach(v => targets.push(v));
+    slides[11]?.querySelectorAll("video[data-src]").forEach(v => targets.push(v));
+  }
+  if (index >= 12) {
+    slides[13]?.querySelectorAll("video[data-src]").forEach(v => targets.push(v));
+  }
+  if (index >= 13) {
+    const finale = document.getElementById("product-fallback-final");
+    if (finale && !finale.dataset.warmed) {
+      finale.dataset.warmed = "1";
+      finale.preload = "auto";
+      finale.load();
+    }
+  }
+  targets.forEach(video => {
+    const src = video.dataset.src || video.querySelector("source")?.getAttribute("src");
+    if (!src || preloadState.videos.has(src)) return;
+    preloadState.videos.set(src, true);
+    const probe = document.createElement("video");
+    probe.preload = "metadata";
+    probe.muted = true;
+    probe.src = src;
+  });
+}
+
+function warmImagesForSlide(index) {
+  const next = slides[index + 1];
+  if (!next) return;
+  next.querySelectorAll("img").forEach(img => {
+    const src = img.currentSrc || img.getAttribute("src");
+    if (src) preloadImage(src);
+  });
+}
+
 function showSlide(index) {
   current = Math.max(0, Math.min(slides.length - 1, index));
+  if (preloadState.warm) { warmImagesForSlide(current); warmVideosForSlide(current); }
   slides.forEach((slide, i) => {
     const active = i === current;
     slide.classList.toggle("is-active", active);
@@ -377,6 +430,53 @@ initFilters(stage);
 const definePreload = new Image();
 definePreload.src = "assets/define/用户画像和旅程地图.webp";
 
+function initPresentationPreparer() {
+  const enabled = new URLSearchParams(location.search).has("prepare");
+  if (!enabled) { preloadState.warm = true; return; }
+  const panel = document.createElement("div");
+  panel.id = "prep-panel";
+  panel.setAttribute("role", "status");
+  panel.style.cssText = "position:fixed;right:18px;bottom:18px;z-index:9999;width:340px;max-height:60vh;overflow:auto;padding:14px 16px;border-radius:12px;background:rgba(24,18,14,.94);color:#fff9ed;font:14px/1.5 system-ui,sans-serif;box-shadow:0 8px 30px rgba(0,0,0,.35)";
+  panel.innerHTML = '<div style="font-weight:700;margin-bottom:8px">汇报资源准备</div><div id="prep-status">准备中…</div><div id="prep-fails" style="margin-top:8px;color:#ffb4a0"></div>';
+  document.body.appendChild(panel);
+  const status = panel.querySelector("#prep-status");
+  const fails = panel.querySelector("#prep-fails");
+  const imageSrcs = [...new Set([...document.querySelectorAll("img")].map(i => i.getAttribute("src")).filter(Boolean))];
+  const videoSrcs = [...new Set([...document.querySelectorAll("video[data-src],video source")].map(v => v.dataset.src || v.getAttribute("src")).filter(Boolean))];
+  const failures = [];
+  let done = 0;
+  const total = imageSrcs.length + videoSrcs.length;
+  const tick = () => { done++; status.textContent = `正在准备 ${done} / ${total}`; };
+  imageSrcs.forEach(src => {
+    const e = preloadImage(src);
+    const check = () => { if (e.done) { tick(); if (!e.ok) failures.push(`图片 ${src}`); renderFails(); } else setTimeout(check, 120); };
+    check();
+  });
+  videoSrcs.forEach(src => {
+    const probe = document.createElement("video");
+    probe.preload = "metadata"; probe.muted = true;
+    let settled = false;
+    const settle = ok => { if (settled) return; settled = true; tick(); if (!ok) failures.push(`视频 ${src}`); renderFails(); };
+    probe.onloadedmetadata = () => settle(true);
+    probe.onerror = () => settle(false);
+    probe.src = src;
+    setTimeout(() => settle(false), 15000);
+  });
+  function renderFails() {
+    if (failures.length) fails.innerHTML = "加载失败：<br>" + failures.map(f => escapeHtml(f)).join("<br>");
+  }
+  function escapeHtml(s) { return s.replace(/[&<>]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;' }[c])); }
+  const wait = setInterval(() => {
+    if (done >= total) {
+      clearInterval(wait);
+      status.textContent = failures.length ? `准备结束，${failures.length} 项失败` : "汇报资源已准备完成";
+      status.style.color = failures.length ? "#ffb4a0" : "#9fe0a6";
+    }
+  }, 200);
+  preloadState.warm = true;
+}
+
+initPresentationPreparer();
 initFeatureDetails();
 initIterate6();
 initFinalProductFallback();
