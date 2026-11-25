@@ -363,8 +363,6 @@ function initIterate6() {
     video.dataset.t6Loaded = "1";
   }
 
-  videos.forEach(video => { video.preload = "auto"; ensureVideo(video); });
-
   function pauseAll() {
     videos.forEach(video => video.pause());
   }
