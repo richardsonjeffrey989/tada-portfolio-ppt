@@ -2,6 +2,7 @@
 /*.png
 /*.ps1
 /*.py
+/*.txt
 
 # Unused original copy of the long demo video (site uses full-flow-faststart.mp4)
 assets/showcase/full-flow.mp4
