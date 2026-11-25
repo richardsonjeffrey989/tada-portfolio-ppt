@@ -1,0 +1,1 @@
+import{t as e}from"./Capsule-Dhgg1FAE.js";import{t}from"./jsx-runtime-Wy9s6hX0.js";var n=t();function r(){return(0,n.jsx)(`div`,{className:`flex flex-col items-center bg-[var(--page)] px-6 py-10`,children:(0,n.jsx)(`div`,{className:`w-[min(640px,100%)]`,children:(0,n.jsx)(e,{placeholder:`试试 Tab、左右切换`})})})}export{r as default};
