@@ -1,0 +1,13 @@
+# Root-level local verification screenshots (keep assets/ images)
+/*.png
+/*.ps1
+/*.py
+
+# Unused original copy of the long demo video (site uses full-flow-faststart.mp4)
+assets/showcase/full-flow.mp4
+
+# Git / editor
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
