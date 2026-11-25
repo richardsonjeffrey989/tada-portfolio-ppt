@@ -1,0 +1,1 @@
+var e=(e,t=16)=>e*360/t;export{e as t};
