@@ -1,0 +1,1 @@
+import{n as e,r as t,t as n}from"./reduced-motion-2fDGfAC9.js";import{a as r,n as i}from"./jsx-runtime-Wy9s6hX0.js";var a=r(i(),1);function o(){!e.current&&n();let[r]=(0,a.useState)(t.current);return r}export{o as t};
