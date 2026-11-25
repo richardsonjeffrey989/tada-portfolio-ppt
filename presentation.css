@@ -307,8 +307,8 @@
 .slide-t6 .slide-head { margin-bottom:.35rem; padding-bottom:.25rem; }
 .slide-t6 .slide-kicker { font-size:1.05rem; letter-spacing:.14em; }
 .slide-t6 .slide-head h2 { font-size:2.8rem; line-height:1.08; }
-.slide-t6 .slide-scale { height:820px; display:block; position:relative; }
-.slide-t6 .t6-body { width:100%; height:100%; display:grid; grid-template-rows:auto auto 570px auto; gap:.3rem; overflow:hidden; }
+.slide-t6 .slide-scale { height:906px; display:block; position:relative; }
+.slide-t6 .t6-body { width:100%; height:100%; display:grid; grid-template-rows:auto auto 630px auto; gap:.3rem; overflow:hidden; }
 .slide-t6 .t6-stats { display:flex; align-items:center; gap:1.1rem; padding:.25rem .6rem; background:#f1e9d9; font-size:.9rem; }
 .slide-t6 .t6-stats span { white-space:nowrap; }
 .slide-t6 .t6-stats b { color:var(--accent); font:700 1.05rem/1 var(--heading); }
@@ -316,9 +316,9 @@
 .slide-t6 .t6-tabs { display:grid; grid-template-columns:repeat(5,1fr); gap:.35rem; }
 .slide-t6 .t6-tabs button { padding:.28rem .3rem; border:1px solid var(--line); background:transparent; color:var(--ink); font:700 .88rem/1.2 var(--body); cursor:pointer; }
 .slide-t6 .t6-tabs button[aria-selected="true"] { background:var(--accent); border-color:var(--accent); color:#fff; }
-.slide-t6 .t6-view { min-width:0; height:570px; overflow:hidden; }
+.slide-t6 .t6-view { min-width:0; height:630px; overflow:hidden; }
 .slide-t6 .t6-compare { display:grid; gap:.5rem; align-items:stretch; height:100%; min-height:0; }
-.slide-t6 .t6-compare-4 { grid-template-columns:minmax(0,1.05fr) minmax(0,1.25fr) minmax(0,1fr) minmax(0,1.05fr); }
+.slide-t6 .t6-compare-4 { grid-template-columns:minmax(0,.85fr) minmax(0,1.8fr) minmax(0,1.35fr) minmax(0,1fr); }
 .slide-t6 .t6-notes { min-width:0; min-height:0; overflow:hidden; padding:0; border:0; background:transparent; }
 .slide-t6 .t6-notes h4 { margin:0 0 .35rem; color:var(--accent-dark); font:700 .85rem/1.2 var(--heading); letter-spacing:.04em; }
 .slide-t6 .t6-notes h4.t6-add { margin-top:.65rem; color:var(--accent); }
@@ -331,20 +331,20 @@
 .slide-t6 .t6-before-shots { display:grid; gap:.3rem; align-content:center; }
 .slide-t6 .t6-before-shots figure { margin:0; min-width:0; min-height:0; text-align:center; }
 .slide-t6 .t6-before-shots a { display:grid; place-items:center; width:100%; height:100%; }
-.slide-t6 .t6-before-shots img { display:block; width:auto; max-width:100%; max-height:500px; object-fit:contain; background:transparent; border:0; }
+.slide-t6 .t6-before-shots img { display:block; width:auto; max-width:100%; max-height:610px; object-fit:contain; background:transparent; border:0; }
 .slide-t6 .t6-before-shots figcaption { margin-top:.1rem; color:var(--muted); font-size:.68rem; line-height:1.1; }
 .slide-t6 .t6-shots-2x2 { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); }
-.slide-t6 .t6-shots-2x2 img { max-height:252px; }
+.slide-t6 .t6-shots-2x2 img { max-height:285px; }
 .slide-t6 .t6-shots-3 { grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:1fr; }
 .slide-t6 .t6-shots-2 { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:1fr; }
 .slide-t6 .t6-video-wrap { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.2rem; }
-.slide-t6 .t6-video-stage { display:flex; align-items:center; justify-content:center; width:100%; height:548px; min-height:0; overflow:hidden; }
-.slide-t6 .t6-video { display:block; width:auto; max-width:100%; height:548px; max-height:548px; object-fit:contain; background:transparent; }
+.slide-t6 .t6-video-stage { display:flex; align-items:center; justify-content:center; width:100%; height:610px; min-height:0; overflow:hidden; }
+.slide-t6 .t6-video { display:block; width:auto; max-width:100%; height:700px; max-height:610px; object-fit:contain; background:transparent; }
 .slide-t6 .t6-video-wrap > p { flex:0 0 auto; margin:0; color:var(--muted); font-size:.72rem; line-height:1.2; text-align:center; }
 .slide-t6 .t6-video-actions { display:none; }
 .slide-t6 [data-t6-view="settings"] .t6-settings-before,
 .slide-t6 [data-t6-view="settings"] .t6-settings-after { grid-template-columns:1fr; }
-.slide-t6 [data-t6-view="settings"] .t6-before-shots img { max-height:500px; }
+.slide-t6 [data-t6-view="settings"] .t6-before-shots img { max-height:580px; }
 .slide-t6 .t6-calendar-flow { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,2fr); gap:.35rem; align-items:stretch; height:100%; min-height:0; }
 .slide-t6 .t6-cal-stage { min-width:0; min-height:0; display:flex; flex-direction:column; padding:0; border:0; background:transparent; }
 .slide-t6 .t6-cal-stage h3 { margin:0 0 .25rem; color:var(--accent-dark); font:700 .95rem/1.2 var(--heading); }
@@ -454,14 +454,16 @@
 .slide-d5.d5-naming .d5-candidates > div { grid-template-columns:repeat(2,minmax(0,1fr)); gap:.4rem 1rem; }
 .slide-d5.d5-naming .d5-candidates span { font-size:1.15rem; }
 .slide-d5.d5-naming .d5-final-name p { font-size:1.05rem; }
-.slide-d5.d5-naming .d5-swatches i { width:3.4rem; height:3.4rem; }
+.slide-d5.d5-naming .d5-swatches i { width:4.6rem; height:4.6rem; margin-right:1.2rem; }
+.slide-d5.d5-naming .d5-swatches div { grid-template-columns:4.6rem 1fr; column-gap:1.2rem; }
 .slide-d5.d5-naming .d5-swatches b { font-size:1.1rem; }
-.slide-d5.d5-naming .d5-logo-grid { grid-template-columns:minmax(0,1fr) auto minmax(0,1.25fr); gap:1.2rem; align-items:center; }
-.slide-d5.d5-naming .d5-logo-thumbs { grid-template-columns:repeat(2,minmax(0,1fr)); gap:.5rem; }
-.slide-d5.d5-naming .d5-logo-thumbs img { height:5.5rem; background:#fff; }
+.slide-d5.d5-naming .d5-logo { margin-top:.35rem; }
+.slide-d5.d5-naming .d5-logo-grid { grid-template-columns:minmax(0,.95fr) auto minmax(0,1.35fr); gap:.9rem; align-items:center; }
+.slide-d5.d5-naming .d5-logo-thumbs { grid-template-columns:repeat(2,minmax(0,1fr)); gap:.35rem; }
+.slide-d5.d5-naming .d5-logo-thumbs img { height:6.2rem; background:#fff; border:0; padding:0; }
 .slide-d5.d5-naming .d5-logo-arrow { color:var(--accent); font:700 2.5rem/1 var(--heading); }
 .slide-d5.d5-naming .d5-logo-final a { border:0; padding:0; background:transparent; }
-.slide-d5.d5-naming .d5-logo-final img { height:16rem; }
+.slide-d5.d5-naming .d5-logo-final img { height:21rem; }
 .slide-d5.d5-naming .d5-logo-note { margin:.3rem 0 0; color:var(--muted); font-size:.9rem; }
 
 /* 05-2 从手绘构想到多端设计 */
