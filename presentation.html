@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TADA! 图然想起项目作品集 PPT 汇报版。">
+  <title>TADA! 图然想起 · PPT 汇报</title>
+  <link rel="icon" href="assets/design/brand-symbol.webp" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="presentation.css">
+  <script src="presentation.js" defer></script>
+</head>
+<body class="presentation-page">
+  <nav class="ppt-nav" aria-label="PPT 章节导航">
+    <a class="ppt-brand" href="../TADA-项目作品集网站/index.html">TADA<span>!</span></a>
+    <div class="ppt-nav-links">
+      <button type="button" data-slide-go="0">封面</button>
+      <button type="button" data-slide-go="1">发现问题</button>
+      <button type="button" data-slide-go="3">用户调研</button>
+      <button type="button" data-slide-go="6">问题定义</button>
+      <button type="button" data-slide-go="7">方案探索</button>
+      <button type="button" data-slide-go="9">产品设计</button>
+      <button type="button" data-slide-go="13">测试迭代</button>
+      <button type="button" data-slide-go="14">最终成果</button>
+    </div>
+    <a class="ppt-back" href="../TADA-项目作品集网站/index.html">返回网页 ↗</a>
+  </nav>
+  <div class="ppt-shell">
+    <div class="ppt-stage" id="ppt-stage">
+<article class="slide slide-cover is-active" data-slide="" aria-hidden="false"><div class="slide-fit"><div class="slide-scale" style="--fit-scale: 0.9093333333333333;"><div class="slide-body slide-cover"><div class="hero-copy">
+        <div class="cover-brand"><img src="assets/design/brand-symbol.webp" alt="TADA! 品牌标志" width="64" height="64"><p class="eyebrow"><span></span> PROJECT CASE STUDY · 湖北美术学院 · 联合设计训练营</p></div>
+        <h1 id="hero-title-s1"><span lang="en">TADA<i>!</i></span><span class="hero-zh">图然想起</span></h1>
+        <p class="hero-line">让收藏过的灵感，不再难以找回。</p>
+        <p class="hero-desc">给设计师的 AI 视觉素材收藏与检索工具。从一次找不到收藏的经历，走到可以体验的课程原型。</p>
+        <div class="actions"><a class="button primary" href="#problem">阅读项目案例</a><a class="button outline" href="#implementation">查看产品流程</a><a class="button outline" href="#outcome">体验产品</a></div>
+      </div><div class="hero-art art-poster">
+        <div class="art-glow" aria-hidden="true"></div>
+        <div class="art-grid" aria-hidden="true"></div>
+        <div class="art-top"><span>PROJECT ARCHIVE</span></div>
+        <div class="phone-mockup">
+          <div class="phone-frame">
+            <span class="phone-island" aria-hidden="true"></span>
+            <div class="phone-screen"><video class="phone-video" autoplay loop muted playsinline preload="auto" aria-label="TADA! 新手教程演示"><source src="assets/cover/tutorial.mp4" type="video/mp4"></video></div>
+          </div>
+        </div>
+        <p class="art-caption">SAVE <span>/</span> FIND <span>/</span> USE</p>
+        <div class="art-bottom"><span lang="en">TADA! PRODUCT DEMO</span><span>2026.11</span></div>
+      </div><div class="project-strip cover-strip" aria-label="项目概览">
+        <div><span>项目类型</span><b>产品设计 · 研究与开发</b></div>
+        <div><span>设计方向</span><b>AI 智能素材管理与创作辅助</b></div>
+        <div><span>项目产出</span><b>多端网页 · 品牌 · <span class="keep-together">可运行原型</span></b></div>
+      </div></div></div></div></article><article class="slide slide-bugs" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale" style="--fit-scale: 0.6526315789473685;"><header class="slide-head"><p class="slide-kicker">01 DISCOVER · 发现问题</p><h2>我明明收藏过</h2></header><div class="slide-body slide-stack"><div class="problem-block">
+        <div class="problem-block-head"><div><h3>从生活中发现问题</h3><p>两位组员先各写各的：13 条 + 12 条，共 25 个真实生活 Bug。</p></div></div>
+        <div class="bug-note-groups">
+          <div class="bug-note-column">
+            <h4>陈宇彤 · 13 条</h4>
+            <ol>
+              <li><b>01</b><span>投屏小字看不清</span></li>
+              <li class="is-marked"><b>02</b><span>找素材风格比例总对不上</span></li>
+              <li><b>03</b><span>Figma 批量改总漏几个</span></li>
+              <li><b>04</b><span>文件在另一台电脑上</span></li>
+              <li><b>05</b><span>几个软件来回导，糊了</span></li>
+              <li><b>06</b><span>屏幕和打印颜色不一样</span></li>
+              <li class="is-marked"><b>07</b><span>设计文件版本太多</span></li>
+              <li><b>08</b><span>C 盘满了不敢删</span></li>
+              <li><b>09</b><span>半夜用电脑吵室友</span></li>
+              <li><b>10</b><span>重要通知被淹没</span></li>
+              <li><b>11</b><span>洗澡总带毛巾</span></li>
+              <li><b>12</b><span>公厕手机没地方放</span></li>
+              <li><b>13</b><span>充电头把插孔挡了</span></li>
+            </ol>
+          </div>
+          <div class="bug-note-column">
+            <h4>潘奕好 · 12 条</h4>
+            <ol>
+              <li><b>14</b><span>水杯漏了泡坏充电器</span></li>
+              <li><b>15</b><span>类纸膜老掉、笔尖磨</span></li>
+              <li><b>16</b><span>想不起前几天干了啥</span></li>
+              <li><b>17</b><span>十几块十几块地乱买</span></li>
+              <li><b>18</b><span>数据线缠成一团</span></li>
+              <li><b>19</b><span>睡前刷手机停不下来</span></li>
+              <li><b>20</b><span>画着画着就驼背了</span></li>
+              <li><b>21</b><span>忘了家里已经有了</span></li>
+              <li><b>22</b><span>侧躺戴耳机压耳朵</span></li>
+              <li class="is-marked"><b>23</b><span>收集的参考图找不到</span></li>
+              <li><b>24</b><span>拍的 PPT 照片乱成一团</span></li>
+              <li><b>25</b><span>起夜开灯太刺眼</span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="funnel-flow" role="img" aria-label="从25个生活问题，筛到3个候选问题，再聚焦1个选题">
+          <div class="funnel-step"><b>25</b><span>个生活问题</span><small>全部写下来</small></div>
+          <span class="funnel-arrow" aria-hidden="true">→</span>
+          <div class="funnel-step"><b>3</b><span>个候选问题</span><small>找素材风格比例总对不上 / 设计文件版本太多 / 收集的参考图找不到</small></div>
+          <span class="funnel-arrow" aria-hidden="true">→</span>
+          <div class="funnel-step is-final"><b>1</b><span>个选题</span><small>各个平台收藏的东西，找不回来</small></div>
+        </div>
+      </div></div></div></div></article><article class="slide slide-pain" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale" style="--fit-scale: 0.9264285714285714;"><header class="slide-head"><p class="slide-kicker">01 DISCOVER · 发现问题</p><h2>真实的收藏困境</h2></header><div class="slide-body slide-stack"><div class="pain-layout">
+        <section class="pain-evidence">
+          <div class="pain-module-head"><p class="pain-scene">这种晚上，我们都经历过。</p></div>
+          <div class="app-shots">
+            <figure><img src="assets/problem/xiaohongshu-1.jpg" decoding="async" alt="小红书收藏页面，参考和点赞混在一起"><figcaption><b>小红书</b><span>参考和随手点的赞混在一起。</span></figcaption></figure>
+            <figure><img src="assets/problem/xiaohongshu-2.jpg" decoding="async" alt="小红书收藏页面继续往下找"><figcaption><b>小红书</b><span>往下划……还是没有。</span></figcaption></figure>
+            <figure><img src="assets/problem/zcool.jpg" decoding="async" alt="站酷收藏夹里大量作品集"><figcaption><b>站酷</b><span>收藏夹里一堆作品集。</span></figcaption></figure>
+            <figure><img src="assets/problem/bilibili.jpg" decoding="async" alt="B站收藏内容已失效"><figcaption><b>B站</b><span>找到了，但已失效。</span></figcaption></figure>
+          </div>
+          <p class="give-up-line">算了，重新搜吧。</p>
+        </section>
+        <section class="pain-analysis">
+          <div class="pain-module-head"><h3>收藏容易，找回却很难</h3><p>把初步发现的痛点压缩成四个关键词。</p></div>
+          <div class="pain-grid"><span>收藏分散</span><span>记忆模糊</span><span>内容失效</span><span>重复搜索</span></div>
+        </section>
+      </div><p class="problem-transition">这只是我们自己的困扰，还是更多创作者共同面对的问题？</p></div></div></div></article><article class="slide slide-research-methods" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">02 RESEARCH · 用户调研</p><h2>我们问了谁，怎么做的？</h2></header><div class="slide-body"><div class="rm-layout">
+  <section class="rm-left">
+    <div class="rm-module-head"><h3>调研对象与规模</h3></div>
+    <div class="rm-poster-wrap">
+      <figure class="rm-poster"><a class="zoom" href="assets/research/survey-recruitment-poster.jpg" data-gallery="research-method"><img src="assets/research/survey-recruitment-poster.jpg" decoding="async" alt="企鹅问卷招募海报 · 设计参考素材收藏与查找习惯调查"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>企鹅问卷招募海报 · 真实调研过程素材</figcaption></figure>
+      <div class="rm-metrics">
+        <div><b>61</b><span>份问卷提交</span></div>
+        <div><b>60</b><span>名有视觉创作经历</span></div>
+        <div><b>52</b><span>名核心分析样本</span></div>
+        <div><b>7</b><span>份线上补充访谈</span></div>
+      </div>
+    </div>
+    <p class="rm-note"><b>调研方式</b>：线上问卷 + 线上补充访谈。问卷通过朋友圈、QQ 动态、群聊和小红书传播；另设 6 个深入调研名额，用于继续追问收藏、找回与整理习惯。</p>
+  </section>
+  <section class="rm-right">
+    <div class="rm-module-head"><h3>真实调研过程</h3></div>
+    <div class="rm-shots">
+      <figure><a class="zoom" href="assets/research/survey-spread.jpg" data-gallery="research-process"><img src="assets/research/survey-spread.jpg" decoding="async" alt="问卷传播 · 社交平台转发截图"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>问卷传播</b><span>朋友圈、QQ 动态、群聊与小红书</span></figcaption></figure>
+      <figure><a class="zoom" href="assets/research/survey-edit.jpg" data-gallery="research-process"><img src="assets/research/survey-edit.jpg" decoding="async" alt="问卷编辑 · 问卷设计页面"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>问卷编辑</b><span>围绕收藏习惯与找回困难设计问题</span></figcaption></figure>
+      <figure><a class="zoom" href="assets/research/online-recruitment.jpg" data-gallery="research-process"><img src="assets/research/online-recruitment.jpg" decoding="async" alt="线上招募 · 访谈邀请对话"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption><b>线上招募</b><span>对愿意继续交流的受访者补充访谈</span></figcaption></figure>
+    </div>
+  </section>
+</div></div></div></div></article><article class="slide slide-research-findings" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">02 RESEARCH · 用户调研</p><h2>三大核心发现</h2></header><div class="slide-body rf-body">
+  <div class="tabs enhanced finding-tabs" data-tabs="finding" aria-label="三大核心发现" role="tablist">
+    <button type="button" data-tab="finding1" aria-selected="true" role="tab" tabindex="0">发现一｜收藏分散</button>
+    <button type="button" data-tab="finding2" aria-selected="false" role="tab" tabindex="-1">发现二｜找回困难</button>
+    <button type="button" data-tab="finding3" aria-selected="false" role="tab" tabindex="-1">发现三｜再次使用</button>
+  </div>
+  <div data-panels="finding" class="finding-panels rf-panels">
+    <section class="finding-panel" data-panel="finding1" role="tabpanel" tabindex="0">
+      <div class="rf-layout rf-layout--three">
+        <div class="rf-copy">
+          <h3>大家把参考存得很分散</h3>
+          <p class="rf-stat"><b>39 / 52</b><span>使用两种及以上保存方式</span></p>
+          <p class="source">保存方式 · 多选题 · n = 52</p>
+          <blockquote class="rf-quote"><p>“特别喜欢的会保存图片放在相册的文件夹里”</p><cite>访谈原话 · 节选</cite></blockquote>
+          <div class="rf-habits"><b>一位同学的实际收藏方式</b><span>小红书：重要教程发小号，普通内容直接收藏</span><span>B站：自己建立收藏夹</span><span>抖音：使用平台自动分类</span></div>
+        </div>
+        <div class="rf-evidence rf-chart">
+          <h4>收藏方式分布</h4>
+          <ul class="bars"><li><span>收藏在原平台</span><span class="bar" aria-hidden="true"><i style="--n:82.6923076923077%"></i></span><b>43<small> 人</small></b></li><li><span>保存到设备</span><span class="bar" aria-hidden="true"><i style="--n:71.15384615384616%"></i></span><b>37<small> 人</small></b></li><li><span>复制链接或发给自己</span><span class="bar" aria-hidden="true"><i style="--n:51.92307692307693%"></i></span><b>27<small> 人</small></b></li><li><span>使用专门收藏软件</span><span class="bar" aria-hidden="true"><i style="--n:13.461538461538462%"></i></span><b>7<small> 人</small></b></li></ul>
+          <p class="source">7 人数据来自现有问卷整理补充；发现一 PPT 展示前三项。</p>
+        </div>
+        <figure class="rf-photo rf-shot"><a class="zoom" href="assets/research/finding1-habits.jpg" data-gallery="finding"><img src="assets/research/finding1-habits.jpg" decoding="async" alt="真实用户在不同平台中的收藏习惯截图"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>真实证据 · 不同平台中的收藏习惯</figcaption></figure>
+      </div>
+    </section>
+    <section class="finding-panel" data-panel="finding2" role="tabpanel" tabindex="0" hidden="">
+      <div class="rf-layout">
+        <div class="rf-copy">
+          <h3>“明明收藏过”，找起来还是麻烦</h3>
+          <p class="rf-stat"><b>46</b><span>人作答找回困难题 · 多选</span></p>
+          <p class="source">不是“有没有收藏”，而是收藏之后能不能找回来。</p>
+          <blockquote class="rf-quote"><p>“记忆里有这张参考，但没通过右上角文字搜索搜到，因为只有文件名信息”</p><cite>访谈原话 · 节选</cite></blockquote>
+        </div>
+        <div class="rf-evidence">
+          <h4>重新查找时遇到的问题</h4>
+          <ul class="bars"><li><span>收藏太多，不好翻</span><span class="bar" aria-hidden="true"><i style="--n:65.21739130434783%"></i></span><b>30<small> 人</small></b></li><li><span>想不起关键词</span><span class="bar" aria-hidden="true"><i style="--n:52.17391304347826%"></i></span><b>24<small> 人</small></b></li><li><span>只记得图片大概样子</span><span class="bar" aria-hidden="true"><i style="--n:47.82608695652174%"></i></span><b>22<small> 人</small></b></li><li><span>忘记存在哪里</span><span class="bar" aria-hidden="true"><i style="--n:43.47826086956522%"></i></span><b>20<small> 人</small></b></li><li><span>原内容或链接失效</span><span class="bar" aria-hidden="true"><i style="--n:23.91304347826087%"></i></span><b>11<small> 人</small></b></li></ul>
+          <p class="source">前四项来自发现二 PPT；链接失效 11 人来自现有问卷整理补充。</p>
+        </div>
+      </div>
+    </section>
+    <section class="finding-panel" data-panel="finding3" role="tabpanel" tabindex="0" hidden="">
+      <div class="rf-layout">
+        <div class="rf-copy">
+          <h3>大家其实还会再次使用以前收藏的东西</h3>
+          <p class="rf-stat"><b>49 / 52</b><span>表示经常或偶尔会再次使用</span></p>
+          <p class="source">复用频率 · 单选题 · n = 52</p>
+          <blockquote class="rf-quote"><p>“前两三天找参考花太多时间了”</p><cite>访谈原话 · 节选</cite></blockquote>
+          <blockquote class="rf-quote"><p>“希望保存的时候本地可以弹小窗选相册分类”</p><cite>访谈原话 · 节选</cite></blockquote>
+        </div>
+        <div class="rf-evidence">
+          <div class="rf-donut-row"><div class="donut" style="--pct:94.2%" role="img" aria-label="49/52 会再次使用"><span>49/52</span><small>会再次使用</small></div><ul class="mini-stats"><li><b>10</b><span>经常使用</span></li><li><b>39</b><span>偶尔使用</span></li><li><b>3</b><span>基本不再使用</span></li></ul></div>
+          <h4>期待的收藏体验改进</h4>
+          <ul class="bars"><li><span>自动整理和分类</span><span class="bar" aria-hidden="true"><i style="--n:71.15384615384616%"></i></span><b>37<small> 人</small></b></li><li><span>通过图片或描述找回</span><span class="bar" aria-hidden="true"><i style="--n:63.46153846153846%"></i></span><b>33<small> 人</small></b></li><li><span>更方便地保存不同平台内容</span><span class="bar" aria-hidden="true"><i style="--n:46.15384615384615%"></i></span><b>24<small> 人</small></b></li><li><span>创作时更方便查看和使用</span><span class="bar" aria-hidden="true"><i style="--n:44.230769230769226%"></i></span><b>23<small> 人</small></b></li></ul>
+          <p class="source">改进期待 · 多选题 · n = 52。此处只呈现用户期待，不直接等同已确定功能。</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div></div></div></article><article class="slide slide-research-conclusion" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">02 RESEARCH · 用户调研</p><h2>假设验证与调研总结</h2></header><div class="slide-body rc-body">
+  <div class="rc-hypotheses">
+    <article><span>假设一</span><h3>收藏方式分散</h3><p class="status is-supported">得到支持</p><p>39 / 52 使用两种及以上保存方式。</p></article>
+    <article><span>假设二</span><h3>收藏内容难以找回</h3><p class="status is-supported">得到支持</p><p>30 人觉得收藏太多，24 人想不起关键词，22 人只记得画面。</p></article>
+    <article><span>假设三</span><h3>收藏后基本不再使用</h3><p class="status is-refuted">被推翻</p><p>49 / 52 表示经常或偶尔会再次使用。</p></article>
+  </div>
+  <p class="source rc-source">来源 · 开题判断 PPT；完整表述与证据以原始 PPT 为准。</p>
+  <div class="rc-summary">
+    <p class="eyebrow">CHAPTER SUMMARY · 章节总结</p>
+    <h3>这并不是我们独有的困扰。</h3>
+    <p>许多受访创作者都面临素材收藏分散、找回困难的问题，而他们仍然有再次使用素材的需求。</p>
+    <strong>那么，造成这些困难的原因是什么？</strong>
+  </div>
+</div></div></div></article><article class="slide slide-define" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">03 PROBLEM DEFINITION · 问题定义</p><h2>我们真正需要解决的问题是什么？</h2></header><div class="slide-body define-body">
+  <div class="define-map"><a class="zoom" href="assets/define/用户画像和旅程地图.png" data-gallery="define-map"><img src="assets/define/用户画像和旅程地图.png" alt="TADA! 第三章 用户旅程地图 · 小林的参考图找回过程"><span class="zoom-mark" aria-hidden="true">+</span></a></div>
+  <div class="rc-summary define-summary"><p class="eyebrow">HOW MIGHT WE · 核心问题定义</p><h3>如何让用户即使<em>只记得画面</em>，也能<em>快速找回</em>以前收藏的参考图？</h3></div>
+</div></div></div></article>
+<article class="slide slide-ideate-1" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">04 IDEATE · 方案探索</p><h2>初步构想与方案探索</h2></header><div class="slide-body ideate-body ideate-body-1">
+  <div class="ideate-duo ideate-duo-side">
+    <section class="ideate-person ideate-person-left">
+      <div class="ideate-person-head"><span class="ideate-person-tag">构想一</span><h3>让素材更容易被找回</h3><b>陈宇彤</b></div>
+      <div class="ideate-person-body">
+        <ul class="ideate-points"><li><b>AI 关键词提取</b>自动识别素材内容与视觉特征</li><li><b>自然语言检索</b>通过模糊描述找回记忆中的素材</li><li><b>多维度搜索</b>支持颜色、风格、画面内容等线索</li><li><b>智能分类整理</b>减少手动标记与整理负担</li></ul>
+        <figure class="ideate-sketch"><a class="zoom" href="assets/ideate/陈宇彤 (2).jpg" data-gallery="ideate-sketch"><img src="assets/ideate/陈宇彤 (2).jpg" decoding="async" alt="陈宇彤手写的初步构想原稿"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>陈宇彤 · 独立手写构想原稿 · 点击放大</figcaption></figure>
+      </div>
+    </section>
+    <section class="ideate-person ideate-person-right">
+      <div class="ideate-person-head"><span class="ideate-person-tag">构想二</span><h3>让收藏与创作产生联系</h3><b>潘奕好</b></div>
+      <div class="ideate-person-body">
+        <figure class="ideate-sketch"><a class="zoom" href="assets/ideate/潘奕好 (2).jpg" data-gallery="ideate-sketch"><img src="assets/ideate/潘奕好 (2).jpg" decoding="async" alt="潘奕好手写的初步构想原稿"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>潘奕好 · 独立手写构想原稿 · 点击放大</figcaption></figure>
+        <ul class="ideate-points"><li><b>AI 视觉理解</b>识别素材的画面内容与视觉信息</li><li><b>模糊记忆检索</b>无需名称，通过描述查找</li><li><b>收藏灵感记录</b>保留收藏时的想法与创作意图</li><li><b>创作辅助探索</b>让已收藏素材服务于创作</li></ul>
+      </div>
+    </section>
+  </div>
+  <div class="ideate-common"><span>共同探索方向</span><p>用 AI 帮助用户<em>整理</em>、<em>找回</em>和<em>使用</em>收藏的素材。</p></div>
+</div></div></div></article>
+<article class="slide slide-ideate-2" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">04 IDEATE · 方案探索</p><h2>竞品分析与方案确定</h2></header><div class="slide-body ideate-body ideate-body-2">
+  <div class="competitor-header"><p class="ideate-lead">通过分析现有素材管理与内容收藏工具，明确设计机会，并结合真实用户需求确定产品方向。</p><a class="zoom competitor-more" href="assets/ideate/竟品分析.png" data-gallery="competitor-table">查看完整竞品分析 ↗</a></div>
+  <div class="competitor-grid">
+    <article class="competitor">
+      <div class="competitor-head"><h3>Eagle</h3><span>直接竞品</span></div>
+      <div class="competitor-shots"><a class="zoom" href="assets/ideate/eagle_01.png" data-gallery="eagle"><img src="assets/ideate/eagle_01.png" decoding="async" alt="Eagle 素材管理界面"><span class="zoom-mark" aria-hidden="true">+</span></a></div>
+      <p><b>核心优势</b>专业素材管理，分类整理清晰。</p>
+      <p><b>主要不足</b>偏整理工具，跨平台收藏与快速找回能力较弱。</p>
+    </article>
+    <article class="competitor">
+      <div class="competitor-head"><h3>Pinterest</h3><span>间接竞品</span></div>
+      <div class="competitor-shots"><a class="zoom" href="assets/ideate/pinterest_01.png" data-gallery="pinterest"><img src="assets/ideate/pinterest_01.png" decoding="async" alt="Pinterest 视觉内容发现界面"><span class="zoom-mark" aria-hidden="true">+</span></a></div>
+      <p><b>核心优势</b>适合发现灵感，浏览和收藏图片方便。</p>
+      <p><b>主要不足</b>更偏内容推荐，收藏后不方便系统整理与回找。</p>
+    </article>
+    <article class="competitor">
+      <div class="competitor-head"><h3>小红书</h3><span>替代型竞品</span></div>
+      <div class="competitor-shots"><a class="zoom" href="assets/ideate/xhs.png" data-gallery="xhs"><img src="assets/ideate/xhs.png" decoding="async" alt="小红书收藏夹界面"><span class="zoom-mark" aria-hidden="true">+</span></a></div>
+      <p><b>核心优势</b>内容丰富，符合用户日常收藏习惯。</p>
+      <p><b>主要不足</b>收藏分散、信息杂，后期难以快速找回目标素材。</p>
+    </article>
+  </div>
+  <div class="decision-flow decision-flow-2">
+    <div class="decision-opportunity"><h3>为什么确定这个方向？</h3><h4>我们看到的机会</h4><ul><li>用户已经习惯在内容平台里顺手收藏。</li><li>真正的痛点是收藏之后找不回。</li><li>收藏的最终目的，是在创作时继续用上。</li></ul></div>
+    <div class="decision-needs"><h4>真实用户需求</h4><p class="decision-nums"><b>37</b> 人希望改善素材整理</p><p class="decision-nums"><b>33</b> 人希望改善素材找回</p><p class="decision-nums"><b>24</b> 人希望实现跨平台收藏</p></div>
+  </div>
+  <div class="rc-summary ideate-summary ideate-summary-final"><p class="eyebrow">CHAPTER SUMMARY · 章节总结</p><h3>最终产品方向</h3><p><em>统一收藏</em>入口，用 <em>AI 找回</em>素材，<em>辅助创作</em>。</p></div>
+</div></div></div></article>
+<article class="slide slide-d5 d5-naming" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">05 PRODUCT DESIGN · 产品设计</p><h2>从名字到视觉</h2></header><div class="slide-body d5-body d5-naming-body">
+  <div class="d5-naming-grid">
+    <section class="d5-names">
+      <div class="d5-sec-head"><span>01</span><h3>产品命名：从灵感到名称</h3></div>
+      <div class="d5-candidates"><b>曾经讨论过的名字</b><div><span>图然想起 <i>TADA!</i></span><span>我存过吧 <i>SAVED?</i></span><span>眼熟一下 <i>SEENIT</i></span><span>存哪去了 <i>WHERE'D IT GO</i></span></div></div>
+      <div class="d5-final-name"><b>最终名称</b><strong>图然想起 <i>TADA!</i></strong><p>取自「突然想起」的谐音，寓意重新找回收藏素材时的惊喜。</p></div>
+    </section>
+    <section class="d5-color">
+      <div class="d5-sec-head"><span>02</span><h3>品牌配色：确定视觉基调</h3></div>
+      <div class="d5-swatches"><div><i style="background:#f7f1e6"></i><b>奶油米白</b><span>页面底色</span></div><div><i style="background:#3b2a22"></i><b>深棕</b><span>正文与标题</span></div><div><i style="background:#984b31"></i><b>陶土橙</b><span>强调与重点</span></div><div><i style="background:#6e7355"></i><b>灰橄榄绿</b><span>辅助色</span></div></div>
+    </section>
+  </div>
+  <section class="d5-logo">
+    <div class="d5-sec-head"><span>03</span><h3>Logo 与字体：从探索到定稿</h3></div>
+    <div class="d5-logo-grid">
+      <div class="d5-logo-early"><b>早期探索</b><div class="d5-logo-thumbs">
+        <a class="zoom" href="assets/design5/01从名字到视觉/logo确定/1.png" data-gallery="d5logo"><img src="assets/design5/01从名字到视觉/logo确定/1.png" alt="Logo 探索方案 · 四宫格照片"><span class="zoom-mark" aria-hidden="true">+</span></a>
+        <a class="zoom" href="assets/design5/01从名字到视觉/logo确定/2.png" data-gallery="d5logo"><img src="assets/design5/01从名字到视觉/logo确定/2.png" alt="Logo 探索方案 · 倾斜照片"><span class="zoom-mark" aria-hidden="true">+</span></a>
+        <a class="zoom" href="assets/design5/01从名字到视觉/logo确定/3.png" data-gallery="d5logo"><img src="assets/design5/01从名字到视觉/logo确定/3.png" alt="Logo 探索方案 · 文件夹堆叠"><span class="zoom-mark" aria-hidden="true">+</span></a>
+        <a class="zoom" href="assets/design5/01从名字到视觉/logo确定/4.png" data-gallery="d5logo"><img src="assets/design5/01从名字到视觉/logo确定/4.png" alt="Logo 探索方案 · 取景框"><span class="zoom-mark" aria-hidden="true">+</span></a>
+        <a class="zoom" href="assets/design5/01从名字到视觉/logo确定/5.png" data-gallery="d5logo"><img src="assets/design5/01从名字到视觉/logo确定/5.png" alt="Logo 探索方案 · 纸片笔触"><span class="zoom-mark" aria-hidden="true">+</span></a>
+        <a class="zoom" href="assets/design5/01从名字到视觉/logo确定/8.png" data-gallery="d5logo"><img src="assets/design5/01从名字到视觉/logo确定/8.png" alt="Logo 探索方案 · 编辑档案风"><span class="zoom-mark" aria-hidden="true">+</span></a>
+      </div></div>
+      <div class="d5-logo-arrow" aria-hidden="true">→</div>
+      <div class="d5-logo-final"><b>最终定稿</b><a class="zoom" href="assets/design5/01从名字到视觉/logo确定/最后确定为这个.png" data-gallery="d5logo"><img src="assets/design5/01从名字到视觉/logo确定/最后确定为这个.png" alt="TADA! 图然想起最终 Logo 定稿"><span class="zoom-mark" aria-hidden="true">+</span></a><p class="d5-logo-note">以文件夹与照片为主要视觉元素，体现素材收藏的产品定位。</p></div>
+    </div>
+  </section>
+</div></div></div></article>
+<article class="slide slide-d5 d5-sketches" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">05 PRODUCT DESIGN · 产品设计</p><h2>从手绘构想到多端设计</h2></header><div class="slide-body d5-body d5-sketches-body">
+  <div class="d5-sketch-grid">
+    <section class="d5-sketch-item">
+      <div class="d5-sketch-head"><span>01</span><h3>手机 / iPad 端构想</h3></div>
+      <figure class="d5-sketch-fig"><a class="zoom" href="assets/design5/02从手绘构想到多端设计/移动端.jpg" data-gallery="d5sketch"><img src="assets/design5/02从手绘构想到多端设计/移动端.jpg" alt="手机与 iPad 端手绘构想草图"><span class="zoom-mark" aria-hidden="true">+</span></a></figure>
+      <p class="d5-sketch-desc">探索移动设备上的产品界面与交互方式。</p>
+    </section>
+    <section class="d5-sketch-item">
+      <div class="d5-sketch-head"><span>02</span><h3>网页端构想</h3></div>
+      <figure class="d5-sketch-fig"><a class="zoom" href="assets/design5/02从手绘构想到多端设计/电脑端.jpg" data-gallery="d5sketch"><img src="assets/design5/02从手绘构想到多端设计/电脑端.jpg" alt="网页端手绘构想草图"><span class="zoom-mark" aria-hidden="true">+</span></a></figure>
+      <p class="d5-sketch-desc">探索产品在大屏幕上的界面布局。</p>
+    </section>
+  </div>
+  <p class="d5-sketch-note">以上内容仅代表早期设计构想，不代表不同设备之间存在功能限制。</p>
+  <p class="d5-sketch-summary">从手绘草图出发，逐步确定以手机端为主的产品设计方案。</p>
+</div></div></div></article>
+<article class="slide slide-d5 d5-core" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">05 PRODUCT DESIGN · 产品设计</p><h2>为什么是「收、找、用」？</h2></header><div class="slide-body d5-body d5-core-body">
+  <p class="d5-lead d5-core-lead">从用户调研中发现的问题出发，将产品设计划分为三个核心功能。</p>
+  <div class="d5-core-tabs" role="tablist" aria-label="功能详情">
+    <button type="button" data-feature="collect">收 · COLLECT</button>
+    <button type="button" data-feature="find">找 · FIND</button>
+    <button type="button" data-feature="create">用 · CREATE</button>
+  </div>
+  <div class="d5-feature-view" data-feature-view="core">
+    <div class="d5-feature-grid">
+      <section class="d5-feature"><p class="d5-feature-en">01 · COLLECT</p><h3>收</h3><p class="d5-problem"><span>用户遇到的问题</span>素材分散在不同平台，收藏和整理不方便。</p><p class="d5-solution"><span>我们的设计方案</span><b>多渠道统一收集</b></p><ul><li>链接导入</li><li>相册批量导入</li><li>手机截图导入</li><li>小红书进阶模式</li></ul></section>
+      <section class="d5-feature"><p class="d5-feature-en">02 · FIND</p><h3>找</h3><p class="d5-problem"><span>用户遇到的问题</span>记得素材的画面，却想不起名称和收藏位置。</p><p class="d5-solution"><span>我们的设计方案</span><b>AI 智能检索</b></p><ul><li>按画面记忆搜索</li><li>关键词检索</li><li>相似素材推荐</li></ul></section>
+      <section class="d5-feature"><p class="d5-feature-en">03 · CREATE</p><h3>用</h3><p class="d5-problem"><span>用户遇到的问题</span>收藏了大量素材，却难以直接用于创作。</p><p class="d5-solution"><span>我们的设计方案</span><b>项目管理与灵感板</b></p><ul><li>项目整理</li><li>多种画板版式</li><li>素材自由编辑</li><li>图片与 PDF 导出</li></ul></section>
+    </div>
+    <p class="d5-core-summary">让素材收得进、找得到、用得上。</p>
+  </div>
+  <div class="d5-feature-view d5-detail-view" data-feature-view="collect" hidden="">
+    <div class="d5-detail-head"><b>收｜素材收集流程</b><button type="button" class="d5-detail-back" data-back-feature>返回总览 ↩</button></div>
+    <div class="d5-detail-workspace">
+      <nav class="d5-detail-steps" aria-label="收集流程步骤"><button type="button" data-detail-step="aeb20ab0cd71811fff6b67a1ca304e8b.jpg" data-detail-video="" aria-selected="true">综合流程</button><button type="button" data-detail-step="链接.png" data-detail-video="assets/flow/collect-link.mp4">A · 链接导入</button><button type="button" data-detail-step="c277f49559b88ad3a247a6098fc1aca2.png" data-detail-video="assets/flow/collect-album.mp4">B · 相册批量导入</button><button type="button" data-detail-step="截图.png" data-detail-video="assets/flow/collect-screenshot.mp4">C · 手机截图导入</button><button type="button" data-detail-step="002ae4e119cfca22a00d4d31fbed7773.jpg" data-detail-video="assets/flow/collect-tutu.mp4">D · 小红书进阶模式</button></nav>
+      <div class="d5-detail-stage"><a class="zoom" href="assets/design5/03核心功能设计/04收/aeb20ab0cd71811fff6b67a1ca304e8b.jpg" data-gallery="d5detail"><img src="assets/design5/03核心功能设计/04收/aeb20ab0cd71811fff6b67a1ca304e8b.jpg" alt="收｜综合流程总览"><span class="zoom-mark" aria-hidden="true">+</span></a></div>
+      <div class="d5-detail-media">
+        <div class="d5-detail-video" hidden><video class="d5-detail-video-player" muted loop playsinline autoplay controls preload="none" aria-label="收集操作录屏"></video></div>
+        <div class="d5-detail-note"><b>综合流程说明</b><p>这一页用于总览 TADA 的四种收集方式：链接导入、相册批量导入、手机截图导入、小红书进阶模式。</p><p>点击左侧 A / B / C / D，可分别查看对应流程图与真实操作录屏。</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="d5-feature-view d5-detail-view" data-feature-view="find" hidden="">
+    <div class="d5-detail-head"><b>找｜素材检索流程</b><button type="button" class="d5-detail-back" data-back-feature>返回总览 ↩</button></div>
+    <div class="d5-detail-workspace">
+      <div class="d5-find-cases"><div><b>案例 A｜正常命中</b><p>搜索词：文字排版</p><strong>251 → 8</strong><span>从 251 张收藏素材中检索出 8 张相关素材。</span></div><div><b>案例 B｜无精准命中</b><p>搜索词：黑色猫</p><strong>0 → 相似候选</strong><span>当精准搜索结果为 0 时，系统仍会提供可能相关的候选素材。</span></div><p class="source">以上数字来自实际演示流程中的搜索案例，用于说明产品逻辑。</p></div>
+      <div class="d5-detail-stage"><a class="zoom" href="assets/design5/03核心功能设计/05找/02找01.png" data-gallery="d5detail"><img src="assets/design5/03核心功能设计/05找/02找01.png" alt="找｜完整检索流程图"><span class="zoom-mark" aria-hidden="true">+</span></a></div>
+      <div class="d5-detail-media"><p class="d5-video-caption">自然语言检索与找相似 · 真实竖屏录屏</p><div class="d5-detail-video"><video class="d5-detail-video-player" muted loop playsinline autoplay controls preload="none" data-src="assets/flow/flow-find-01.mp4" aria-label="找｜真实操作录屏"><source src="assets/flow/flow-find-01.mp4" type="video/mp4"></video></div></div>
+    </div>
+  </div>
+  <div class="d5-feature-view d5-detail-view" data-feature-view="create" hidden="">
+    <div class="d5-detail-head"><b>用｜创作辅助流程</b><button type="button" class="d5-detail-back" data-back-feature>返回总览 ↩</button></div>
+    <div class="d5-detail-workspace">
+      <div class="d5-create-notes"><b>核心能力</b><ul><li>组织素材：杂志、拼贴、网格</li><li>自由编辑：调整、裁剪、翻转、灰度等</li><li>成果输出：图片及 PDF</li></ul></div>
+      <div class="d5-detail-stage"><a class="zoom" href="assets/design5/03核心功能设计/06用/03“用”详细.png" data-gallery="d5detail"><img src="assets/design5/03核心功能设计/06用/03“用”详细.png" alt="用｜创作辅助流程图"><span class="zoom-mark" aria-hidden="true">+</span></a></div>
+      <div class="d5-detail-media"><p class="d5-video-caption">项目与灵感板 · 真实竖屏录屏</p><div class="d5-detail-video"><video class="d5-detail-video-player" muted loop playsinline autoplay controls preload="none" data-src="assets/flow/flow-use-01.mp4" aria-label="用｜真实操作录屏"><source src="assets/flow/flow-use-01.mp4" type="video/mp4"></video></div></div>
+    </div>
+  </div>
+</div></div></div></article>
+<article class="slide slide-d5 d5-flow" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">05 PRODUCT DESIGN · 产品设计</p><h2>从素材收藏到实际创作</h2></header><div class="slide-body d5-body d5-flow-body">
+  <div class="d5-flow-stage"><a class="zoom" href="assets/design5/04/整体总流程.png" data-gallery="d5flow"><img src="assets/design5/04/整体总流程.png" alt="TADA! 收 / 找 / 用｜产品使用完整 12 步流程图"><span class="zoom-mark" aria-hidden="true">+</span></a></div>
+  <div class="rc-summary d5-summary d5-flow-summary"><p class="eyebrow">CHAPTER SUMMARY · 章节总结</p><h3>让素材存得方便、找得回来、用得起来。</h3></div>
+</div></div></div></article><article class="slide slide-t6" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">06 TEST &amp; ITERATE · 测试迭代</p><h2>根据用户反馈，我们改了什么？</h2></header><div class="slide-body t6-body">
+  <div class="t6-stats"><div><b>5</b><span>位真实用户</span></div><div><b>44</b><span>条反馈与建议</span></div><div><b>39</b><span>条已完成修改</span></div><p>结合真实用户体验、教师建议及团队自测，对产品进行逐项优化。</p></div>
+  <div class="t6-tabs" role="tablist" aria-label="测试迭代模块">
+    <button type="button" data-t6="collect" aria-selected="true">收｜收集优化</button>
+    <button type="button" data-t6="find" aria-selected="false">找｜检索优化</button>
+    <button type="button" data-t6="create" aria-selected="false">用｜创作优化</button>
+    <button type="button" data-t6="calendar" aria-selected="false">日历｜功能迭代</button>
+    <button type="button" data-t6="settings" aria-selected="false">设置｜界面优化</button>
+  </div>
+  <div class="t6-view" data-t6-view="collect">
+    <div class="t6-compare-label"><span>BEFORE · 修改前 2.0</span><i>→</i><span>AFTER · 修改后 3.0</span></div>
+    <div class="t6-compare t6-compare-4">
+      <div class="t6-problems"><b>修改前的问题</b><p><span>01 导入</span><strong>导入方式有限</strong>仅支持相册、文件及链接导入，素材收集方式不够全面。</p><p><span>02 收入待确认</span><strong>导入步骤繁琐</strong>导入后的待确认界面较为复杂，增加中间操作。</p><p><span>03 素材库导航</span><strong>功能入口过于集中</strong>功能集中在界面顶部，寻找及使用不够方便。</p><p><span>04 图图界面</span><strong>进阶导入操作复杂</strong>小红书进阶导入原有界面较为繁琐。</p></div>
+      <div class="t6-before-shots t6-shots-2x2"><figure><a class="zoom" href="assets/iterate6/改前 收/导入照片.jpg" data-gallery="t6collect"><img src="assets/iterate6/改前 收/导入照片.jpg" alt="改前 · 导入方式"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>01 导入</figcaption></figure><figure><a class="zoom" href="assets/iterate6/改前 收/收入待确认.jpg" data-gallery="t6collect"><img src="assets/iterate6/改前 收/收入待确认.jpg" alt="改前 · 收入待确认"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>02 收入待确认</figcaption></figure><figure><a class="zoom" href="assets/iterate6/改前 收/素材库导航.jpg" data-gallery="t6collect"><img src="assets/iterate6/改前 收/素材库导航.jpg" alt="改前 · 素材库导航"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>03 素材库导航</figcaption></figure><figure><a class="zoom" href="assets/iterate6/改前 收/图图界面.jpg" data-gallery="t6collect"><img src="assets/iterate6/改前 收/图图界面.jpg" alt="改前 · 图图界面"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>04 图图界面</figcaption></figure></div>
+      <div class="t6-video-wrap"><video class="t6-video" muted loop playsinline preload="none" data-src="assets/iterate6/改后 收.mp4" controls aria-label="收｜改后操作录像"><source src="assets/iterate6/改后 收.mp4" type="video/mp4"></video><p>改后 · 小红书进阶导入</p></div>
+      <div class="t6-after-notes"><b>问题修复</b><p><i>✓</i><strong>简化进阶导入操作</strong>减少复杂的中间操作，降低素材收集的使用门槛。</p><b class="t6-add">＋ 功能升级</b><p><i>＋</i><strong>收进 TADA</strong>通过小红书分享菜单直接触发素材收录。</p><p><i>＋</i><strong>自动获取链接</strong>减少手动复制粘贴及下载图片的操作。</p><p><i>＋</i><strong>刷新即可查看</strong>刷新收藏库后即可查看新收录的素材。</p><p class="t6-focus">改进重点：让跨平台素材收集更加方便，减少繁琐的中间操作。</p></div>
+    </div>
+  </div>
+  <div class="t6-view" data-t6-view="find" hidden="">
+    <div class="t6-compare-label"><span>BEFORE · 修改前 2.0</span><i>→</i><span>AFTER · 修改后 3.0</span></div>
+    <div class="t6-compare t6-compare-4">
+      <div class="t6-problems"><b>修改前的问题</b><p><span>01 找的界面</span><strong>视觉主次不明确</strong>主图不够突出；底部三个功能按钮缺少重要程度区分。</p><p><span>02 往下滑</span><strong>信息排版不清晰</strong>信息层级不够明确，部分内容难以理解。</p><p><span>03 找参考</span><strong>搜索结果不够直观</strong>图片下方附带大量介绍文字，难以快速浏览。</p></div>
+      <div class="t6-before-shots t6-shots-3"><figure><a class="zoom" href="assets/iterate6/改前 找/找的界面.jpg" data-gallery="t6find"><img src="assets/iterate6/改前 找/找的界面.jpg" alt="改前 · 找的界面"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>01 找的界面</figcaption></figure><figure><a class="zoom" href="assets/iterate6/改前 找/往下滑.jpg" data-gallery="t6find"><img src="assets/iterate6/改前 找/往下滑.jpg" alt="改前 · 往下滑"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>02 往下滑</figcaption></figure><figure><a class="zoom" href="assets/iterate6/改前 找/找参考.jpg" data-gallery="t6find"><img src="assets/iterate6/改前 找/找参考.jpg" alt="改前 · 找参考"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>03 找参考</figcaption></figure></div>
+      <div class="t6-video-wrap"><video class="t6-video" muted loop playsinline preload="none" data-src="assets/iterate6/改后 找.mp4" controls aria-label="找｜改后操作录像"><source src="assets/iterate6/改后 找.mp4" type="video/mp4"></video><p>改后 · 自然语言检索与找相似</p></div>
+      <div class="t6-after-notes"><b>问题修复</b><p><i>✓</i><strong>优化图片详情页</strong>重新调整主图、信息及功能入口的视觉层级。</p><p><i>✓</i><strong>突出搜索结果</strong>减少介绍文字对浏览图片的干扰。</p><b class="t6-add">＋ 功能升级</b><p><i>＋</i><strong>自然语言检索</strong>通过描述记得的画面寻找收藏素材。</p><p><i>＋</i><strong>主色色值复制</strong>点击提取出的主色色块即可复制色值。</p><p><i>＋</i><strong>多维度找相似</strong>按内容、配色、风格等维度继续寻找。</p><p class="t6-focus">改进重点：不仅找回记忆中的图片，还能继续寻找相关参考并直接利用配色。</p></div>
+    </div>
+  </div>
+  <div class="t6-view" data-t6-view="create" hidden="">
+    <div class="t6-compare-label"><span>BEFORE · 修改前 2.0</span><i>→</i><span>AFTER · 修改后 3.0</span></div>
+    <div class="t6-compare t6-compare-4">
+      <div class="t6-problems"><b>修改前的问题</b><p><span>01 项目</span><strong>项目功能过于单一</strong>与普通收藏夹区别不明显，卡片占用空间过多，无法直观预览多张素材。</p><p><span>02 灵感板</span><strong>手机端缺少创作工具</strong>初版手机端不支持灵感板，收藏后难以直接进入创作环节。</p></div>
+      <div class="t6-before-shots t6-shots-2"><figure><a class="zoom" href="assets/iterate6/改前 用/项目.jpg" data-gallery="t6create"><img src="assets/iterate6/改前 用/项目.jpg" alt="改前 · 项目"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>01 项目</figcaption></figure><figure><a class="zoom" href="assets/iterate6/改前 用/灵感版.jpg" data-gallery="t6create"><img src="assets/iterate6/改前 用/灵感版.jpg" alt="改前 · 灵感板"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>02 灵感板</figcaption></figure></div>
+      <div class="t6-video-wrap"><video class="t6-video" muted loop playsinline preload="none" data-src="assets/iterate6/改后 用.mp4" controls aria-label="用｜改后操作录像"><source src="assets/iterate6/改后 用.mp4" type="video/mp4"></video><p>改后 · 手机端灵感板</p></div>
+      <div class="t6-after-notes"><b>问题修复</b><p><i>✓</i><strong>补充手机端灵感板</strong>让收藏素材后可以直接排布与编辑。</p><p><i>✓</i><strong>拓展项目的创作用途</strong>使项目不再只是普通收藏夹。</p><b class="t6-add">＋ 新增功能</b><p><i>＋</i><strong>灵活切换版式</strong>根据已有素材切换不同的排列方式。</p><p><i>＋</i><strong>自由调整素材</strong>支持图片放大、缩小等基础操作。</p><p><i>＋</i><strong>智能补充参考</strong>通过文字描述继续寻找相关图片。</p><p><i>＋</i><strong>成果保存</strong>将整理完成的灵感板保存为图片。</p><p class="t6-focus">此处仅展示本轮重点优化功能，其他基础编辑功能不逐一展开。</p></div>
+    </div>
+  </div>
+  <div class="t6-view" data-t6-view="calendar" hidden="">
+    <div class="t6-calendar-flow">
+      <section class="t6-cal-stage t6-cal-early"><h3>初始设计</h3><p>界面排版较为杂乱，信息层级不清晰，未能充分体现日历的实际功能。</p><div class="t6-cal-shots"><figure><a class="zoom" href="assets/iterate6/日历/最初（排版已炸.jpg" data-gallery="t6cal"><img src="assets/iterate6/日历/最初（排版已炸.jpg" alt="日历初始版本 排版"><span class="zoom-mark" aria-hidden="true">+</span></a></figure><figure><a class="zoom" href="assets/iterate6/日历/最初（下滑.jpg" data-gallery="t6cal"><img src="assets/iterate6/日历/最初（下滑.jpg" alt="日历初始版本 下滑"><span class="zoom-mark" aria-hidden="true">+</span></a></figure></div></section>
+      <i class="t6-flow-arrow">→</i>
+      <section class="t6-cal-stage t6-cal-mid"><h3>逐步调整</h3><p>继续优化日历界面的排版及功能呈现。</p><div class="t6-cal-shots"><figure><a class="zoom" href="assets/iterate6/日历/第二版.jpg" data-gallery="t6cal"><img src="assets/iterate6/日历/第二版.jpg" alt="日历第二版"><span class="zoom-mark" aria-hidden="true">+</span></a></figure><figure><a class="zoom" href="assets/iterate6/日历/第二版 (2).jpg" data-gallery="t6cal"><img src="assets/iterate6/日历/第二版 (2).jpg" alt="日历第二版 2"><span class="zoom-mark" aria-hidden="true">+</span></a></figure></div></section>
+      <i class="t6-flow-arrow">→</i>
+      <section class="t6-cal-stage t6-cal-final"><h3>最终优化</h3><p>重新梳理界面结构，使日历功能更加清晰、易于理解。</p><div class="t6-cal-groups"><div><b>日历视图</b><div class="t6-cal-shots"><figure><a class="zoom" href="assets/iterate6/日历/最终（日历）.jpg" data-gallery="t6cal"><img src="assets/iterate6/日历/最终（日历）.jpg" alt="最终日历视图"><span class="zoom-mark" aria-hidden="true">+</span></a></figure><figure><a class="zoom" href="assets/iterate6/日历/最终（日历） (2).jpg" data-gallery="t6cal"><img src="assets/iterate6/日历/最终（日历） (2).jpg" alt="最终日历视图 2"><span class="zoom-mark" aria-hidden="true">+</span></a></figure></div><p>每日灵感：界面上方推荐可能感兴趣的图片。按日期查看：点击日期查看当天收藏素材。</p></div><div><b>收藏热力图</b><div class="t6-cal-shots"><figure><a class="zoom" href="assets/iterate6/日历/最终（热力图）.jpg" data-gallery="t6cal"><img src="assets/iterate6/日历/最终（热力图）.jpg" alt="最终收藏热力图"><span class="zoom-mark" aria-hidden="true">+</span></a></figure><figure><a class="zoom" href="assets/iterate6/日历/最终（热力图） (2).jpg" data-gallery="t6cal"><img src="assets/iterate6/日历/最终（热力图） (2).jpg" alt="最终收藏热力图 2"><span class="zoom-mark" aria-hidden="true">+</span></a></figure></div><p>通过颜色深浅，直观体现不同日期的素材收藏数量。</p></div></div></section>
+    </div>
+    <p class="t6-focus">日历帮助用户知道自己哪一天收藏了什么，热力图帮助用户了解哪一天收藏了多少。</p>
+  </div>
+  <div class="t6-view" data-t6-view="settings" hidden="">
+    <div class="t6-compare-label"><span>BEFORE · 修改前 2.0</span><i>→</i><span>AFTER · 修改后 3.0</span></div>
+    <div class="t6-compare t6-compare-4">
+      <div class="t6-problems"><b>修改前的问题</b><p><span>界面层级不够清晰</span><strong>浏览及查找不便</strong>原有设置界面的排版及功能组织不够明确，浏览及查找设置选项不够方便。</p></div>
+      <div class="t6-before-shots t6-shots-2"><figure><a class="zoom" href="assets/iterate6/设置/最初.jpg" data-gallery="t6settings"><img src="assets/iterate6/设置/最初.jpg" alt="设置界面改前"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>改前 · 设置界面</figcaption></figure></div>
+      <div class="t6-before-shots t6-shots-2"><figure><a class="zoom" href="assets/iterate6/设置/最终.jpg" data-gallery="t6settings"><img src="assets/iterate6/设置/最终.jpg" alt="设置界面改后"><span class="zoom-mark" aria-hidden="true">+</span></a><figcaption>改后 · 设置界面</figcaption></figure></div>
+      <div class="t6-after-notes"><b>问题修复</b><p><i>✓</i><strong>优化设置界面排版</strong>重新梳理信息层级，使各项设置更加清晰。</p><b class="t6-add">＋ 新增功能</b><p><i>＋</i><strong>字体大小调整</strong>支持根据个人使用习惯调整文字大小。</p><p><i>＋</i><strong>进阶功能设置</strong>支持自主选择是否开启「图图」进阶导入功能。</p><p class="t6-focus">让设置界面更加清晰，并支持个性化调整。</p></div>
+    </div>
+  </div>
+  <div class="rc-summary t6-summary"><h3>让素材收集、查找和创作更加方便。</h3><p>根据真实用户反馈，持续优化产品界面、操作流程及创作辅助功能。</p></div>
+</div></div></div></article><article class="slide slide-final" data-slide="" aria-hidden="true"><div class="slide-fit"><div class="slide-scale"><header class="slide-head"><p class="slide-kicker">07 FINAL PRODUCT · 最终成果</p><h2>体验完整的 TADA!</h2></header><div class="slide-body final-body">
+  <div class="final-stage"><div class="tada-phone-embed"><div class="tada-phone-scale" style="transform: scale(1);"><div class="tada-phone-shell"><div class="tada-phone-screen"><span class="tada-phone-island" aria-hidden="true"></span><iframe id="product-frame-final" title="TADA! 图然想起 · 可操作的手机端产品" width="390" height="844" allow="clipboard-read; clipboard-write; fullscreen" data-lazy-src="https://shoucang.165-22-254-236.sslip.io/?frame=0"></iframe><video id="product-fallback-final" class="product-fallback-video" poster="assets/showcase/full-flow-poster.jpg" muted loop playsinline preload="none" aria-label="TADA! 完整演示视频"><source src="assets/showcase/full-flow-faststart.mp4" type="video/mp4"></video></div></div></div></div></div>
+  <div class="final-foot">
+    <div class="final-cta"><p class="eyebrow">TRY THE PRODUCT · 产品体验</p><h3>TADA!「图然想起」</h3><a class="button" href="https://shoucang.165-22-254-236.sslip.io/" target="_blank" rel="noopener">打开完整产品 ↗</a></div>
+    <div class="final-value"><div class="value-numbers"><span>30分钟</span><i>→</i><strong>3分钟</strong></div><p>减少寻找参考素材的时间，把更多时间留给创作。</p><small>基于设计创作场景的耗时估算，非正式计时测试结果。</small></div>
+  </div>
+</div></div></div></article>
+    </div>
+  </div>
+  <dialog id="lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-toolbar"><span id="lightbox-count"></span><button type="button" class="close-lightbox" aria-label="关闭图片">关闭 ×</button></div>
+    <figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+    <div class="lightbox-nav"><button type="button" data-lightbox-step="-1">上一张</button><button type="button" data-lightbox-step="1">下一张</button></div>
+  </dialog>
+</body>
+</html>
